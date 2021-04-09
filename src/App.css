@@ -9,6 +9,7 @@
   font-family: sans-serif;
   font-size: 16px;
   --white: #ffffff;
+  --white-secondary: #ebebeb;
   --black: #000000;
   --black-secondary: #1d1d1d;
   --black-background: #090909;
@@ -18,7 +19,7 @@
   --light-gray: #c0c0c0;
   --cta-gray: #f5f5f5;
   --yellow: #eed812;
-  --yellow-2: #c1b227;
+  --yellow-secondary: #c1b227;
   --active: #1ed400;
   --active-2: #d87808;
 }

@@ -49,10 +49,10 @@
 }
 
 .c-hero-reserve__loader {
-  background: var(--yellow-2);
+  background: var(--yellow-secondary);
   display: block;
   width: 75%;
-  height: 4px;
+  height: 2px;
 }
 
 .c-hero-reserve__header .c-hero-reserve__loader {
