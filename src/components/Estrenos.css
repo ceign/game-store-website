@@ -1,10 +1,14 @@
 .estrenos {
   width: 100%;
   height: auto;
-  padding: 5rem 1.5rem 0;
+  padding: 6rem 0 5rem 1.5rem;
 }
 
-.estrenos__title h3 {
+.estrenos__wrapper .estrenos__title {
+  padding-bottom: 3rem;
+}
+
+.estrenos__wrapper .estrenos__title h2 {
   color: var(--white-secondary);
   position: relative;
   font-family: "Exo 2", sans-serif;
@@ -14,18 +18,112 @@
   letter-spacing: 0.7px;
 }
 
-.estrenos__title h3::before {
+.estrenos__wrapper .estrenos__title h2::before {
   content: "";
   width: 100%;
   max-width: 300px;
   height: 2px;
   display: block;
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   background: rgb(9, 9, 9);
   background: linear-gradient(
     260deg,
     rgba(9, 9, 9, 1) 0%,
     rgba(193, 178, 39, 1) 95%
   );
+}
+
+.estrenos__cards {
+  width: 100%;
+  height: auto;
+}
+
+.c-value__card {
+  width: 250px;
+  height: auto;
+}
+
+.c-value__card .c-value__card-image {
+  width: 100%;
+  height: 420px;
+}
+
+.c-value__card .c-value__card-image a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.c-value__card .c-value__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.c-value__card .c-value__card-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding-top: 1.25rem;
+}
+
+.c-value__card .c-value__card-information h3 {
+  color: var(--white-secondary);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 100%;
+  margin-top: 5px;
+}
+
+.c-value__card .c-value__card-information h3 span {
+  display: block;
+  color: var(--light-gray);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 1.1875rem;
+  line-height: 100%;
+  margin-top: 0.5rem;
+}
+
+.c-value__card .c-value__card-information .c-value__card-offer {
+  color: var(--yellow);
+  background-color: var(--light-black);
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  border-radius: 4px;
+}
+
+.c-value__card .c-value__card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1.25rem;
+}
+
+.c-value__card .c-value__card-price span {
+  font-family: "Exo 2", sans-serif;
+  line-height: 100%;
+}
+
+.c-value__card .c-value__card-price span:first-child {
+  color: var(--light-gray);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.c-value__card .c-value__card-price span:last-child {
+  color: var(--yellow);
+  font-size: 1.375rem;
+  font-weight: 600;
 }
