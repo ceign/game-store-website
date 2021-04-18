@@ -7,13 +7,13 @@ import gamesIcon from "../images/game-icon.svg";
 
 const Navbar = () => {
   return (
-    <nav className="c-navbar">
-      <div className="c-navbar__wrapper">
-        <div className="c-navbar-logo">
+    <nav className="navbar">
+      <div className="navbar__wrapper">
+        <div className="navbar-logo">
           <img src={logo} alt="Logo" />
         </div>
 
-        <div className="c-navbar-navigation">
+        <div className="navbar-navigation">
           <ul>
             <li>
               <a href="/">Inicio</a>
@@ -30,26 +30,26 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="c-navbar-search-bar">
+        <div className="navbar-search-bar">
           <input type="text" placeholder="Buscar título ..." maxLength="18" />
         </div>
 
-        <div className="c-navbar-account-buttons">
-          <div className="c-navbar-account-button">
+        <div className="navbar-account-buttons">
+          <div className="navbar-account-button">
             <img src={serverIcon} alt="Servidor" />
           </div>
 
-          <div className="c-navbar-account-button">
+          <div className="navbar-account-button">
             <img src={gamesIcon} alt="Juegos" />
             <span></span>
           </div>
         </div>
 
-        <div className="c-navbar-avatar">
+        <div className="navbar-avatar">
           <img
             src={avatar}
             alt="Avatar - Conectado"
-            className="c-navbar-avatar__image"
+            className="navbar-avatar__image"
           />
 
           <span>Tom Hanks</span>

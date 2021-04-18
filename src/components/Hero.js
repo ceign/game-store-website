@@ -7,28 +7,28 @@ import arrowPrevIcon from "../images/arrow-prev-icon.svg";
 
 const Hero = () => {
   return (
-    <section className="c-hero">
-      <div className="c-hero-image"></div>
+    <section className="hero">
+      <div className="hero-image"></div>
 
-      <div className="c-hero-reserve">
-        <div className="c-hero-reserve__wrapper">
-          <div className="c-hero-reserve__header">
-            <span className="c-hero-reserve__loader"></span>
+      <div className="hero-reserve">
+        <div className="hero-reserve__wrapper">
+          <div className="hero-reserve__header">
+            <span className="hero-reserve__loader"></span>
 
-            <ul className="c-hero-reserve__bullet">
-              <li className="c-hero-reserve__bulle--active"></li>
+            <ul className="hero-reserve__bullet">
+              <li className="hero-reserve__bullet--active"></li>
               <li></li>
               <li></li>
               <li></li>
             </ul>
           </div>
 
-          <div className="c-hero-reserve__body">
-            <img src={codLogo} alt="" className="c-hero-reserve__logo" />
+          <div className="hero-reserve__body">
+            <img src={codLogo} alt="" className="hero-reserve__logo" />
 
             <h3>La temporada de la venganza ya está aquí.</h3>
 
-            <a href="/" className="c-hero-reserve-cta">
+            <a href="/" className="hero-reserve-cta">
               <p>Reservar Ahora</p>
               <span>
                 <img src={calendarIcon} alt="" />
@@ -36,8 +36,8 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="c-hero-reserve__footer">
-            <div className="c-hero-reserve__buttons">
+          <div className="hero-reserve__footer">
+            <div className="hero-reserve__buttons">
               <a href="/">
                 <img src={arrowPrevIcon} alt="Anterior" />
               </a>
@@ -46,14 +46,14 @@ const Hero = () => {
                 <img src={arrowNextIcon} alt="Siguiente" />
               </a>
             </div>
-            <ul className="c-hero-reserve__bullet">
-              <li className="c-hero-reserve__bulle--active"></li>
+            <ul className="hero-reserve__bullet">
+              <li className="hero-reserve__bullet--active"></li>
               <li></li>
               <li></li>
               <li></li>
             </ul>
-            <div className="c-hero-reserve__loader">
-              <span className="c-hero-reserve__loader-load"></span>
+            <div className="hero-reserve__loader">
+              <span className="hero-reserve__loader-load"></span>
             </div>
           </div>
         </div>
