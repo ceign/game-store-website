@@ -15,6 +15,7 @@
   background-color: var(--dark-gray);
   width: 7px;
   height: 7px;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
@@ -36,35 +37,35 @@
 
 /*** End Swiper ***/
 
-.estrenos-carousel__wrapper {
+.estrenos__carousel-wrapper {
   padding-bottom: 6.5rem;
 }
 
-.value__card {
+.value-card {
   width: 250px;
   height: auto;
   margin: auto;
 }
 
-.value__card .value__card-image {
+.value-card .value-card__image {
   width: 100%;
   height: 420px;
 }
 
-.value__card .value__card-image a {
+.value-card .value-card__image a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
 
-.value__card .value__card-image img {
+.value-card .value-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.value__card .value__card-information {
+.value-card .value-card__information {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -73,7 +74,7 @@
   padding-top: 1.25rem;
 }
 
-.value__card .value__card-information h3 {
+.value-card .value-card__information h3 {
   color: var(--white-secondary);
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
@@ -82,7 +83,7 @@
   margin-top: 5px;
 }
 
-.value__card .value__card-information h3 span {
+.value-card .value-card__information h3 span {
   display: block;
   color: var(--light-gray);
   font-family: "Exo 2", sans-serif;
@@ -92,7 +93,7 @@
   margin-top: 0.5rem;
 }
 
-.value__card .value__card-information .value__card-offer {
+.value-card .value-card__information .value-card__offer {
   color: var(--yellow);
   background-color: var(--light-black);
   font-family: "Exo 2", sans-serif;
@@ -104,7 +105,7 @@
   border-radius: 4px;
 }
 
-.value__card .value__card-price {
+.value-card .value-card__price {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -113,19 +114,19 @@
   padding-top: 1.25rem;
 }
 
-.value__card .value__card-price span {
+.value-card .value-card__price span {
   font-family: "Exo 2", sans-serif;
   line-height: 100%;
 }
 
-.value__card .value__card-price span:first-child {
+.value-card .value-card__price span:first-child {
   color: var(--light-gray);
   font-size: 1.125rem;
   font-weight: 400;
   text-decoration: line-through;
 }
 
-.value__card .value__card-price span:last-child {
+.value-card .value-card__price span:last-child {
   color: var(--yellow);
   font-size: 1.375rem;
   font-weight: 600;
@@ -133,18 +134,18 @@
 
 /* 768px */
 @media (min-width: 48em) {
-  .value__card {
+  .value-card {
     margin: initial;
   }
 }
 
 /* 1024px */
 @media (min-width: 64em) {
-  .value__card {
+  .value-card {
     width: 210px;
   }
 
-  .value__card .value__card-image {
+  .value-card .value-card__image {
     height: 330px;
   }
 }
@@ -156,33 +157,33 @@
     margin: auto;
   }
 
-  .estrenos-carousel__wrapper {
+  .estrenos__carousel-wrapper {
     max-width: 1240px;
     margin: auto;
   }
 
-  .value__card {
+  .value-card {
     width: 204px;
     margin: auto;
   }
 
-  .value__card .value__card-image {
+  .value-card .value-card__image {
     height: 320px;
   }
 
-  .value__card .value__card-information h3 {
+  .value-card .value-card__information h3 {
     font-size: 1rem;
   }
 
-  .value__card .value__card-information h3 span {
+  .value-card .value-card__information h3 span {
     font-size: 0.75rem;
   }
 
-  .value__card .value__card-price span:first-child {
+  .value-card .value-card__price span:first-child {
     font-size: 1rem;
   }
 
-  .value__card .value__card-price span:last-child {
+  .value-card .value-card__price span:last-child {
     font-size: 1.25rem;
   }
 }
@@ -193,7 +194,7 @@
     max-width: 1590px;
   }
 
-  .estrenos-carousel__wrapper {
+  .estrenos__carousel-wrapper {
     max-width: 1590px;
   }
 
@@ -201,27 +202,27 @@
     font-size: 1.6875rem;
   }
 
-  .value__card {
+  .value-card {
     width: 250px;
   }
 
-  .value__card .value__card-image {
+  .value-card .value-card__image {
     height: 420px;
   }
 
-  .value__card .value__card-information h3 {
+  .value-card .value-card__information h3 {
     font-size: 1.25rem;
   }
 
-  .value__card .value__card-information h3 span {
+  .value-card .value-card__information h3 span {
     font-size: 1.1875rem;
   }
 
-  .value__card .value__card-price span:first-child {
+  .value-card .value-card__price span:first-child {
     font-size: 1.125rem;
   }
 
-  .value__card .value__card-price span:last-child {
+  .value-card .value-card__price span:last-child {
     font-size: 1.375rem;
   }
 }

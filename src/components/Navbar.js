@@ -9,11 +9,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__wrapper">
-        <div className="navbar-logo">
+        <div className="navbar__logo">
           <img src={logo} alt="Logo" />
         </div>
 
-        <div className="navbar-navigation">
+        <div className="navbar__navigation">
           <ul>
             <li>
               <a href="/">Inicio</a>
@@ -30,27 +30,23 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar-search-bar">
+        <div className="navbar__search-bar">
           <input type="text" placeholder="Buscar título ..." maxLength="18" />
         </div>
 
-        <div className="navbar-account-buttons">
-          <div className="navbar-account-button">
+        <div className="navbar__account-buttons">
+          <div className="navbar__account-button">
             <img src={serverIcon} alt="Servidor" />
           </div>
 
-          <div className="navbar-account-button">
+          <div className="navbar__account-button">
             <img src={gamesIcon} alt="Juegos" />
             <span></span>
           </div>
         </div>
 
-        <div className="navbar-avatar">
-          <img
-            src={avatar}
-            alt="Avatar - Conectado"
-            className="navbar-avatar__image"
-          />
+        <div className="navbar__avatar">
+          <img src={avatar} alt="Avatar - Conectado" />
 
           <span>Tom Hanks</span>
         </div>

@@ -69,7 +69,7 @@ function EstrenosCarousel() {
     <Swiper
       navigation={false}
       pagination={true}
-      className="estrenos-carousel__wrapper"
+      className="estrenos__carousel-wrapper"
       spaceBetween={40}
       slidesPerView={1}
       centeredSlides={true}
@@ -107,21 +107,21 @@ function EstrenosCarousel() {
     >
       {data.map((user) => (
         <SwiperSlide key={user.id}>
-          <div className="value__card">
-            <div className="value__card-image">
+          <div className="value-card">
+            <div className="value-card__image">
               <a href="/">
                 <img src={user.image} alt="" />
               </a>
             </div>
-            <div className="value__card-information">
+            <div className="value-card__information">
               <h3>
                 {user.name}
                 <span>{user.owner}</span>
               </h3>
 
-              <span className="value__card-offer">{user.off}</span>
+              <span className="value-card__offer">{user.off}</span>
             </div>
-            <div className="value__card-price">
+            <div className="value-card__price">
               <span>{user.price}</span>
 
               <span>{user.final_price}</span>
