@@ -85,8 +85,8 @@
 
 .hero-reserve__bullet li.hero-reserve__bullet--active {
   background-color: var(--yellow);
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
 }
 
 .hero-reserve__body {

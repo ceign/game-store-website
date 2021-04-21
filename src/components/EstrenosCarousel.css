@@ -1,0 +1,227 @@
+/*** Swiper ***/
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: initial !important;
+  bottom: 2rem !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--dark-gray);
+  width: 7px;
+  height: 7px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--yellow) !important;
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  top: 0 !important;
+}
+
+/*** End Swiper ***/
+
+.estrenos-carousel__wrapper {
+  padding-bottom: 6.5rem;
+}
+
+.value__card {
+  width: 250px;
+  height: auto;
+  margin: auto;
+}
+
+.value__card .value__card-image {
+  width: 100%;
+  height: 420px;
+}
+
+.value__card .value__card-image a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.value__card .value__card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.value__card .value__card-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding-top: 1.25rem;
+}
+
+.value__card .value__card-information h3 {
+  color: var(--white-secondary);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 100%;
+  margin-top: 5px;
+}
+
+.value__card .value__card-information h3 span {
+  display: block;
+  color: var(--light-gray);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 1.1875rem;
+  line-height: 100%;
+  margin-top: 0.5rem;
+}
+
+.value__card .value__card-information .value__card-offer {
+  color: var(--yellow);
+  background-color: var(--light-black);
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  border-radius: 4px;
+}
+
+.value__card .value__card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1.25rem;
+}
+
+.value__card .value__card-price span {
+  font-family: "Exo 2", sans-serif;
+  line-height: 100%;
+}
+
+.value__card .value__card-price span:first-child {
+  color: var(--light-gray);
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.value__card .value__card-price span:last-child {
+  color: var(--yellow);
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .value__card {
+    margin: initial;
+  }
+}
+
+/* 1024px */
+@media (min-width: 64em) {
+  .value__card {
+    width: 210px;
+  }
+
+  .value__card .value__card-image {
+    height: 330px;
+  }
+}
+
+/* 1240px */
+@media (min-width: 77.5em) {
+  .estrenos__wrapper {
+    max-width: 1240px;
+    margin: auto;
+  }
+
+  .estrenos-carousel__wrapper {
+    max-width: 1240px;
+    margin: auto;
+  }
+
+  .value__card {
+    width: 204px;
+    margin: auto;
+  }
+
+  .value__card .value__card-image {
+    height: 320px;
+  }
+
+  .value__card .value__card-information h3 {
+    font-size: 1rem;
+  }
+
+  .value__card .value__card-information h3 span {
+    font-size: 0.75rem;
+  }
+
+  .value__card .value__card-price span:first-child {
+    font-size: 1rem;
+  }
+
+  .value__card .value__card-price span:last-child {
+    font-size: 1.25rem;
+  }
+}
+
+/* 1600px */
+@media (min-width: 100em) {
+  .estrenos__wrapper {
+    max-width: 1590px;
+  }
+
+  .estrenos-carousel__wrapper {
+    max-width: 1590px;
+  }
+
+  .estrenos__wrapper .estrenos__title h2 {
+    font-size: 1.6875rem;
+  }
+
+  .value__card {
+    width: 250px;
+  }
+
+  .value__card .value__card-image {
+    height: 420px;
+  }
+
+  .value__card .value__card-information h3 {
+    font-size: 1.25rem;
+  }
+
+  .value__card .value__card-information h3 span {
+    font-size: 1.1875rem;
+  }
+
+  .value__card .value__card-price span:first-child {
+    font-size: 1.125rem;
+  }
+
+  .value__card .value__card-price span:last-child {
+    font-size: 1.375rem;
+  }
+}
