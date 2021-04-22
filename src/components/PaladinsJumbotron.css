@@ -1,0 +1,95 @@
+.paladins-jumbotron {
+  padding: 8rem 1.5rem 3rem;
+}
+
+.paladins-jumbotron__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 320px minmax(550px, auto);
+
+  background: rgb(255, 211, 0);
+  background: linear-gradient(
+    110deg,
+    rgb(249 206 0) 0%,
+    rgb(255 199 2) 40%,
+    rgb(255 152 36) 100%
+  );
+  border-radius: 8px;
+}
+
+.paladins-jumbotron__characters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.paladins-jumbotron__characters img:first-child {
+  position: relative;
+  bottom: 6rem;
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+}
+
+.paladins-jumbotron__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paladins-jumbotron__content .paladins-jumbotron__logo {
+  width: 210px;
+}
+
+.paladins-jumbotron__content p {
+  color: var(--jumbotron-paladins-text);
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding: 0 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.paladins-jumbotron__content p span {
+  font-weight: 600;
+}
+
+.paladins-jumbotron__content .paladins-jumbotron__button {
+  color: var(--white);
+  background-color: var(--jumbotron-paladins-button);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 280px;
+  height: 54px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 1rem 1rem 3.5rem;
+}
+
+.paladins-jumbotron__content .paladins-jumbotron__demo {
+  width: 290px;
+  object-fit: cover;
+}
+
+/* <=320px */
+@media (max-width: 20em) {
+  .paladins-jumbotron__content .paladins-jumbotron__button {
+    max-width: 230px;
+  }
+
+  .paladins-jumbotron__content .paladins-jumbotron__demo {
+    max-width: 230px;
+  }
+}

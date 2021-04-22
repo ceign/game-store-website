@@ -1,0 +1,48 @@
+.especiales {
+  width: 100%;
+  height: auto;
+  padding: 4.5rem 0 1rem 1.5rem;
+}
+
+.especiales__wrapper .especiales__title {
+  padding-bottom: 3rem;
+}
+
+.especiales__wrapper .especiales__title h2 {
+  color: var(--white-secondary);
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.7px;
+}
+
+.especiales__wrapper .especiales__title h2::before {
+  content: "";
+  width: 100%;
+  max-width: 300px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  background: rgb(9, 9, 9);
+  background: linear-gradient(
+    260deg,
+    rgba(9, 9, 9, 1) 0%,
+    rgba(193, 178, 39, 1) 95%
+  );
+}
+
+.especiales__cards {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .especiales {
+    padding: 6rem 0 1rem 3.5rem;
+  }
+}
