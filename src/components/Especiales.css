@@ -2,6 +2,8 @@
   width: 100%;
   height: auto;
   padding: 4.5rem 0 1rem 1.5rem;
+
+  border: 1px solid #fff;
 }
 
 .especiales__wrapper .especiales__title {
@@ -39,6 +41,8 @@
   height: auto;
   display: none;
 }
+
+/*** Media Queries ***/
 
 /* 768px */
 @media (min-width: 48em) {

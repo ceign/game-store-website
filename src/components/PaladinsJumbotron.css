@@ -1,20 +1,26 @@
 .paladins-jumbotron {
-  padding: 8rem 1.5rem 3rem;
+  padding: 8rem 1.5rem 0rem;
+  margin-bottom: 1000px;
+  border: 2px solid red;
 }
 
 .paladins-jumbotron__wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 320px minmax(550px, auto);
-
+  grid-template-rows: 290px minmax(520px, auto);
+  width: 100%;
+  max-width: 380px;
+  height: 100%;
+  min-height: 830px;
   background: rgb(255, 211, 0);
   background: linear-gradient(
     140deg,
-    rgb(249 206 0) 65%,
+    rgb(255 199 0) 65%,
     rgb(255 199 2) 30%,
     rgb(239, 187, 0) 0%
   );
   border-radius: 8px;
+  margin: auto;
 }
 
 .paladins-jumbotron__characters {
@@ -36,6 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .paladins-jumbotron__content .paladins-jumbotron__logo {
@@ -51,7 +58,7 @@
   letter-spacing: 0.2px;
   text-align: center;
   padding: 0 1rem;
-  margin: 1.5rem 0 2rem;
+  margin: 1.5rem 0 1rem;
 }
 
 .paladins-jumbotron__content p span {
@@ -67,7 +74,7 @@
   justify-content: center;
   width: 100%;
   max-width: 280px;
-  height: 54px;
+  height: 48px;
   font-family: "Exo 2", sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
@@ -79,17 +86,66 @@
 }
 
 .paladins-jumbotron__content .paladins-jumbotron__demo {
-  width: 290px;
+  width: 100%;
   object-fit: cover;
+  border-radius: 0 0 8px 8px;
 }
 
-/* <=320px */
+/*** Media Queries ***/
+
+/* 320px */
 @media (max-width: 20em) {
   .paladins-jumbotron__content .paladins-jumbotron__button {
     max-width: 230px;
   }
+}
+
+/* 1024px */
+@media (min-width: 64em) {
+  .paladins-jumbotron__wrapper {
+    max-width: 500px;
+  }
+}
+
+/* 1240px */
+@media (min-width: 77.5em) {
+  .paladins-jumbotron__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1180px;
+    height: 470px;
+    min-height: inherit;
+    margin: auto;
+  }
+
+  .paladins-jumbotron__characters {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+  }
+
+  .paladins-jumbotron__content {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem 0 0 5rem;
+  }
+
+  .paladins-jumbotron__content p {
+    text-align: left;
+    padding: 0 9rem 0 0;
+    margin-bottom: 0;
+  }
+
+  .paladins-jumbotron__content .paladins-jumbotron__button {
+    max-width: 210px;
+    margin: 2rem 0;
+  }
 
   .paladins-jumbotron__content .paladins-jumbotron__demo {
-    max-width: 230px;
+    max-width: 300px;
+    border-radius: 0;
+    height: 120px;
+    object-fit: cover;
   }
 }

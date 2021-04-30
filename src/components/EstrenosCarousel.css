@@ -132,6 +132,8 @@
   font-weight: 600;
 }
 
+/*** Media Queries ***/
+
 /* 768px */
 @media (min-width: 48em) {
   .value-card {

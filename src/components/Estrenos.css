@@ -40,6 +40,8 @@
   display: none;
 }
 
+/*** Media Queries ***/
+
 /* 768px */
 @media (min-width: 48em) {
   .estrenos {
