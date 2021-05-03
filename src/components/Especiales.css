@@ -2,8 +2,6 @@
   width: 100%;
   height: auto;
   padding: 4.5rem 0 1rem 1.5rem;
-
-  border: 1px solid #fff;
 }
 
 .especiales__wrapper .especiales__title {
@@ -48,5 +46,39 @@
 @media (min-width: 48em) {
   .especiales {
     padding: 6rem 0 1rem 3.5rem;
+  }
+}
+
+/* 1024px */
+@media (min-width: 64em) {
+  .especiales__wrapper .especiales__title {
+    padding-bottom: 6rem;
+  }
+}
+
+/* 1240px */
+@media (min-width: 77.5em) {
+  .especiales {
+    padding: 3rem 0 1rem 3.5rem;
+  }
+
+  .especiales__wrapper {
+    max-width: 1240px;
+    margin: auto;
+  }
+
+  .especiales__wrapper .especiales__title {
+    padding-bottom: 3rem;
+  }
+}
+
+/* 1600px */
+@media (min-width: 100em) {
+  .especiales {
+    padding: 6rem 0 1rem 3.5rem;
+  }
+
+  .especiales__wrapper {
+    max-width: 1590px;
   }
 }
