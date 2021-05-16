@@ -108,7 +108,7 @@
   font-weight: 300;
   line-height: 130%;
   letter-spacing: 0.2px;
-  text-align: left;
+  text-align: center;
   margin: 0 auto 3.2rem;
 }
 
@@ -204,6 +204,7 @@
 
   .hero__reserve-body h3 {
     max-width: 312px;
+    text-align: left;
   }
 
   .hero__reserve-body .hero__reserve-cta {

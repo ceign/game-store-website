@@ -1,5 +1,5 @@
 /*** Import Google Font 'Exo 2' ***/
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;800&display=swap");
 
 /*** Global CSS ***/
 
@@ -11,20 +11,22 @@
   --white: #ffffff;
   --white-secondary: #ebebeb;
   --black: #000000;
-  --light-black: #1f1f1f;
+  --dark-gray: #3f3f3f;
   --black-secondary: #1d1d1d;
   --black-background: #090909;
+  --light-black: #1f1f1f;
   --black-text: #1f1f1f;
+  --blue-text: #024d92;
+  --yellow: #eed812;
+  --yellow-secondary: #c1b227;
   --gray-text: #d1d1d1;
-  --dark-gray: #3f3f3f;
   --light-gray: #c0c0c0;
   --jumbotron-paladins-text: #7e4c00;
   --jumbotron-paladins-button: #c2840b;
   --cta-gray: #f5f5f5;
-  --yellow: #eed812;
-  --yellow-secondary: #c1b227;
   --active: #1ed400;
   --active-2: #d87808;
+  --bullet: #379fff;
 }
 
 body {

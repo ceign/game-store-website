@@ -1,0 +1,203 @@
+.fall-guys {
+  width: 100%;
+  height: auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.fall-guys__wrapper {
+  width: 100%;
+  height: auto;
+}
+
+/*** Medium Card ***/
+
+.fall-guys__medium-card {
+  width: 100%;
+  max-width: 380px;
+  height: 650px;
+  background: linear-gradient(121.86deg, #379fff 13.35%, #026bcd 86.17%);
+  border-radius: 8px;
+  margin-bottom: 170px;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__info {
+  color: var(--white);
+  position: relative;
+  text-align: center;
+  padding: 6.5rem 0.625rem 0;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__info::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 160px;
+  background-image: url("/src/images/logo-fall-guys.png");
+  background-size: cover;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__info h3 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__info p {
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  padding: 0 0.625rem;
+  margin: 2rem 0 3rem 0;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__button {
+  color: var(--blue-text);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__image img {
+  width: 100%;
+  max-width: 230px;
+  margin: 3rem auto 0;
+}
+
+/*** Carrousel ***/
+
+.fall-guys__carrousel {
+  padding-top: 1rem;
+}
+
+.fall-guys__carrousel .fall-guys__title {
+  margin-bottom: 2rem;
+}
+
+.fall-guys__carrousel .fall-guys__title h2 {
+  color: var(--white);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  letter-spacing: 0.04rem;
+}
+
+.fall-guys__carrousel .fall-guys__swiper {
+  width: 100%;
+  max-width: 380px;
+  background: linear-gradient(121.86deg, #379fff 13.35%, #026bcd 86.17%);
+  padding: 4rem 0 3rem;
+  border-radius: 8px;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-characters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-characters img {
+  object-fit: cover;
+  height: auto;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-characters img:first-child {
+  width: 80px;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-characters img:nth-child(2) {
+  width: 164px;
+  margin: 0 10%;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-characters img:last-child {
+  width: 60px;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-bullets {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-bullets span {
+  background-color: var(--bullet);
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-bullets span:nth-child(2) {
+  background-color: var(--white);
+  width: 12px;
+  height: 12px;
+  margin: 0 0.5rem;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-info {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-info h3,
+p {
+  color: var(--white);
+  font-family: "Exo 2", sans-serif;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-info h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5625rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-info p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+
+.fall-guys__carrousel .fall-guys__swiper-info p span {
+  display: block;
+  font-weight: 600;
+}
+
+/*** Media Queries ***/
+
+/* 320px */
+@media (max-width: 20em) {
+  .fall-guys__medium-card .fall-guys__medium-card__button {
+    max-width: 230px;
+  }
+}
