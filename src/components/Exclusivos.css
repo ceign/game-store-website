@@ -237,7 +237,7 @@ p {
 /* 768px */
 @media (min-width: 48em) {
   .fall-guys__carrousel .fall-guys__title {
-    padding: 0rem 0 1rem 1.5rem;
+    padding: 0rem 0 1rem 2rem;
   }
 }
 

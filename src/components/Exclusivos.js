@@ -50,7 +50,7 @@ const Exclusivos = () => {
                   ¡Deslízate y deslízate por la pendiente helada en busca de
                   puntos precarios!
                 </span>
-                Una misión de recolección de puntos en solitario.
+                &nbsp;Una misión de recolección de puntos en solitario.
               </p>
             </div>
           </div>
