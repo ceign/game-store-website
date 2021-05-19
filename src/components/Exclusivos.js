@@ -54,6 +54,10 @@ const Exclusivos = () => {
               </p>
             </div>
           </div>
+
+          <div className="fall-guys__button">
+            <a href="/">Ver todos los eventos</a>
+          </div>
         </div>
       </div>
     </section>

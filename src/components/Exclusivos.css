@@ -17,7 +17,7 @@
   height: 650px;
   background: linear-gradient(121.86deg, #379fff 13.35%, #026bcd 86.17%);
   border-radius: 8px;
-  margin-bottom: 170px;
+  margin: 0 auto 170px;
 }
 
 .fall-guys__medium-card .fall-guys__medium-card__info {
@@ -112,6 +112,7 @@
   background: linear-gradient(121.86deg, #379fff 13.35%, #026bcd 86.17%);
   padding: 4rem 0 3rem;
   border-radius: 8px;
+  margin: auto;
 }
 
 .fall-guys__carrousel .fall-guys__swiper-characters {
@@ -129,15 +130,17 @@
 
 .fall-guys__carrousel .fall-guys__swiper-characters img:first-child {
   width: 80px;
+  filter: opacity(0.5);
 }
 
 .fall-guys__carrousel .fall-guys__swiper-characters img:nth-child(2) {
-  width: 164px;
+  width: 180px;
   margin: 0 10%;
 }
 
 .fall-guys__carrousel .fall-guys__swiper-characters img:last-child {
   width: 60px;
+  filter: opacity(0.5);
 }
 
 .fall-guys__carrousel .fall-guys__swiper-bullets {
@@ -193,11 +196,230 @@ p {
   font-weight: 600;
 }
 
+.fall-guys__carrousel .fall-guys__button {
+  width: 100%;
+  height: auto;
+}
+
+.fall-guys__carrousel .fall-guys__button a {
+  color: var(--black);
+  background-color: var(--fall-guys-cta);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 4rem auto 0;
+}
+
 /*** Media Queries ***/
 
 /* 320px */
 @media (max-width: 20em) {
   .fall-guys__medium-card .fall-guys__medium-card__button {
+    max-width: 230px;
+  }
+
+  .fall-guys__carrousel .fall-guys__button a {
+    max-width: 230px;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .fall-guys__carrousel .fall-guys__title {
+    padding: 0rem 0 1rem 1.5rem;
+  }
+}
+
+/* 1024px */
+@media (min-width: 64em) {
+  .fall-guys__medium-card {
+    max-width: 500px;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper {
+    max-width: 500px;
+  }
+}
+
+/* 1240px */
+@media (min-width: 77.5em) {
+  .paladins-jumbotron {
+    margin-bottom: 2rem;
+  }
+
+  .fall-guys__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  .fall-guys__medium-card {
+    margin: 0 0 170px;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__info::before {
+    top: -45px;
+    right: -50px;
+    left: initial;
+  }
+
+  .fall-guys__medium-card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 590px;
+    height: 484px;
+    margin-bottom: 0;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__info {
+    width: 100%;
+    padding: 9.5rem 0 0;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__info h3 {
+    text-align: left;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__info p {
+    text-align: left;
+    padding: 0;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__button {
+    max-width: 200px;
+    margin: 2rem 0;
+  }
+
+  .fall-guys__medium-card__image {
+    position: relative;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__image img {
+    position: absolute;
+    top: 15px;
+    left: -45px;
+    max-width: 300px;
+    margin: inherit;
+  }
+
+  .fall-guys__carrousel {
+    padding-top: 0rem;
+  }
+
+  .fall-guys__carrousel .fall-guys__title {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper {
+    max-width: 490px;
+    height: 430px;
+    padding: 2rem 0 0;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-characters img:first-child {
+    width: 120px;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-characters img:nth-child(2) {
+    width: 220px;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-characters img:last-child {
+    width: 80px;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-bullets {
+    margin: 2rem 0 0;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-info {
+    text-align: left;
+    padding: 0 3rem;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-info h3 {
+    margin: 0.5rem 0 1rem;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-info p span {
+    display: initial;
+  }
+
+  .fall-guys__carrousel .fall-guys__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 3rem;
+  }
+
+  .fall-guys__carrousel .fall-guys__button a {
+    max-width: 200px;
+    margin: initial;
+  }
+}
+
+/* 1600px */
+@media (min-width: 100em) {
+  .fall-guys {
+    padding: 8rem 1.5rem 4rem;
+  }
+
+  .fall-guys__wrapper {
+    max-width: 1530px;
+  }
+
+  .fall-guys__medium-card {
+    max-width: 750px;
+    height: 510px;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__info::before {
+    width: 180px;
+    height: 190px;
+    top: -60px;
+    right: -60px;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__info p {
+    padding: 0 3rem 0 0;
+    font-size: 1.45rem;
+    line-height: 1.4;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__button {
+    max-width: 230px;
+  }
+
+  .fall-guys__medium-card .fall-guys__medium-card__image img {
+    max-width: 370px;
+    top: -50px;
+    left: -30px;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper {
+    max-width: 660px;
+    height: 458px;
+    padding: 4rem 0 0;
+  }
+
+  .fall-guys__carrousel .fall-guys__swiper-info {
+    padding: 0 6rem;
+  }
+
+  .fall-guys__carrousel .fall-guys__button a {
     max-width: 230px;
   }
 }
