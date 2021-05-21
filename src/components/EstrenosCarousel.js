@@ -4,11 +4,16 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
 import "./EstrenosCarousel.css";
 
-import ImageCard_1 from "../images/jett.png";
-import ImageCard_2 from "../images/cyberpunk.png";
+import ImageCard_1 from "../images/valorant.jpg";
+import LogoImageCard_1 from "../images/valorant-logo.png";
+import ImageCard_2 from "../images/cyberpunk.jpg";
+import LogoImageCard_2 from "../images/cyberpunk-logo.png";
 import ImageCard_3 from "../images/wd.jpg";
+import LogoImageCard_3 from "../images/wd-logo.png";
 import ImageCard_4 from "../images/ds.jpg";
+import LogoImageCard_4 from "../images/ds-logo.png";
 import ImageCard_5 from "../images/miles-morales.jpg";
+import LogoImageCard_5 from "../images/miles-morales-logo.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -21,6 +26,7 @@ const data = [
     price: "",
     final_price: "",
     image: ImageCard_1,
+    logo: LogoImageCard_1,
   },
 
   {
@@ -31,6 +37,7 @@ const data = [
     price: "$ 44.900",
     final_price: "$ 30.083",
     image: ImageCard_2,
+    logo: LogoImageCard_2,
   },
 
   {
@@ -41,6 +48,7 @@ const data = [
     price: "$ 39.990",
     final_price: "$ 33.990",
     image: ImageCard_3,
+    logo: LogoImageCard_3,
   },
 
   {
@@ -51,6 +59,7 @@ const data = [
     price: "$ 45.130",
     final_price: "$ 22.565",
     image: ImageCard_4,
+    logo: LogoImageCard_4,
   },
 
   {
@@ -61,6 +70,7 @@ const data = [
     price: "$ 45.130",
     final_price: "$ 28.134",
     image: ImageCard_5,
+    logo: LogoImageCard_5,
   },
 ];
 
@@ -110,7 +120,12 @@ function EstrenosCarousel() {
           <div className="value-card">
             <div className="value-card__image">
               <a href="/">
-                <img src={user.image} alt="" />
+                <img
+                  src={user.image}
+                  alt=""
+                  className="value-card__background"
+                />
+                <img src={user.logo} alt="" className="value-card__logo" />
               </a>
             </div>
             <div className="value-card__information">

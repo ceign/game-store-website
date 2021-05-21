@@ -1,14 +1,14 @@
-.estrenos {
+.populares {
   width: 100%;
   height: auto;
-  padding: 6rem 0 1rem 1.5rem;
+  padding: 1rem 0 1rem 1.5rem;
 }
 
-.estrenos__wrapper .estrenos__title {
+.populares__wrapper .populares__title {
   padding-bottom: 4rem;
 }
 
-.estrenos__wrapper .estrenos__title h2 {
+.populares__wrapper .populares__title h2 {
   color: var(--white-secondary);
   position: relative;
   font-family: "Exo 2", sans-serif;
@@ -18,7 +18,7 @@
   letter-spacing: 0.7px;
 }
 
-.estrenos__wrapper .estrenos__title h2::before {
+.populares__wrapper .populares__title h2::before {
   content: "";
   width: 100%;
   max-width: 300px;
@@ -34,7 +34,7 @@
   );
 }
 
-.estrenos__cards {
+.populares__cards {
   width: 100%;
   height: auto;
   display: none;
@@ -44,23 +44,17 @@
 
 /* 768px */
 @media (min-width: 48em) {
-  .estrenos {
+  .populares {
     padding: 6rem 0 1rem 3.5rem;
   }
 
-  .estrenos__wrapper .estrenos__title {
+  .populares__wrapper .populares__title {
     padding-bottom: 3rem;
   }
 }
 
-/* 1240px */
 @media (min-width: 77.5em) {
-  .estrenos__wrapper {
-    max-width: 1240px;
-    margin: auto;
-  }
-
-  .estrenos__carousel-wrapper {
+  .populares__wrapper {
     max-width: 1240px;
     margin: auto;
   }
@@ -68,16 +62,8 @@
 
 /* 1600px */
 @media (min-width: 100em) {
-  .estrenos__wrapper {
+  .populares__wrapper {
     max-width: 1590px;
-  }
-
-  .estrenos__carousel-wrapper {
-    max-width: 1590px;
-    padding-bottom: 10rem;
-  }
-
-  .estrenos__wrapper .estrenos__title h2 {
-    font-size: 1.6875rem;
+    margin: auto;
   }
 }

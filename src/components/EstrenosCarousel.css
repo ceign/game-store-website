@@ -53,16 +53,27 @@
 }
 
 .value-card .value-card__image a {
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 100%;
 }
 
-.value-card .value-card__image img {
+.value-card .value-card__image .value-card__background {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.value-card .value-card__image .value-card__logo {
+  position: absolute;
+  left: calc(50% - 80px);
+  bottom: 20px;
+  width: 100%;
+  max-width: 160px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .value-card .value-card__information {
@@ -154,16 +165,6 @@
 
 /* 1240px */
 @media (min-width: 77.5em) {
-  .estrenos__wrapper {
-    max-width: 1240px;
-    margin: auto;
-  }
-
-  .estrenos__carousel-wrapper {
-    max-width: 1240px;
-    margin: auto;
-  }
-
   .value-card {
     width: 204px;
     margin: auto;
@@ -192,19 +193,6 @@
 
 /* 1600px */
 @media (min-width: 100em) {
-  .estrenos__wrapper {
-    max-width: 1590px;
-  }
-
-  .estrenos__carousel-wrapper {
-    max-width: 1590px;
-    padding-bottom: 10rem;
-  }
-
-  .estrenos__wrapper .estrenos__title h2 {
-    font-size: 1.6875rem;
-  }
-
   .value-card {
     width: 250px;
   }
