@@ -6,6 +6,7 @@ import EstrenosCarosuel from "./components/EstrenosCarousel";
 import Especiales from "./components/Especiales";
 import PaladinsJumbotron from "./components/PaladinsJumbotron";
 import Exclusivos from "./components/Exclusivos";
+import Populares from "./components/Populares";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Especiales />
       <PaladinsJumbotron />
       <Exclusivos />
+      <Populares />
     </>
   );
 }
