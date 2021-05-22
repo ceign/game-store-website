@@ -7,6 +7,7 @@ import Especiales from "./components/Especiales";
 import PaladinsJumbotron from "./components/PaladinsJumbotron";
 import Exclusivos from "./components/Exclusivos";
 import Populares from "./components/Populares";
+import PopularesCarosuel from "./components/PopularesCarousel";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <PaladinsJumbotron />
       <Exclusivos />
       <Populares />
+      <PopularesCarosuel />
     </>
   );
 }

@@ -37,15 +37,19 @@
 
 /*** End Swiper ***/
 
+.populares__carousel-wrapper {
+  padding-bottom: 6.5rem;
+}
+
 /*** Media Queries ***/
 
-.estrenos__carousel-wrapper {
+.populares__carousel-wrapper {
   padding-bottom: 6.5rem;
 }
 
 /* 1240px */
 @media (min-width: 77.5em) {
-  .estrenos__carousel-wrapper {
+  .populares__carousel-wrapper {
     max-width: 1240px;
     margin: auto;
   }
@@ -53,7 +57,7 @@
 
 /* 1600px */
 @media (min-width: 100em) {
-  .estrenos__carousel-wrapper {
+  .populares__carousel-wrapper {
     max-width: 1590px;
     padding-bottom: 10rem;
   }

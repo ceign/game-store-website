@@ -2,26 +2,26 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-import "./EstrenosCarousel.css";
+import "./PopularesCarousel.css";
 import "./ValueCard.css";
 
-import ImageCard_1 from "../images/valorant.jpg";
-import LogoImageCard_1 from "../images/valorant-logo.png";
-import ImageCard_2 from "../images/cyberpunk.jpg";
-import LogoImageCard_2 from "../images/cyberpunk-logo.png";
-import ImageCard_3 from "../images/wd.jpg";
-import LogoImageCard_3 from "../images/wd-logo.png";
-import ImageCard_4 from "../images/ds.jpg";
-import LogoImageCard_4 from "../images/ds-logo.png";
-import ImageCard_5 from "../images/miles-morales.jpg";
-import LogoImageCard_5 from "../images/miles-morales-logo.png";
+import ImageCard_1 from "../images/lol.jpg";
+import LogoImageCard_1 from "../images/lol-logo.png";
+import ImageCard_2 from "../images/ac-valhala.jpg";
+import LogoImageCard_2 from "../images/ac-logo.png";
+import ImageCard_3 from "../images/gta5.jpg";
+import LogoImageCard_3 from "../images/gta-logo.png";
+import ImageCard_4 from "../images/rocket-league.jpg";
+import LogoImageCard_4 from "../images/rocket-league-logo.png";
+import ImageCard_5 from "../images/borderlands.jpg";
+import LogoImageCard_5 from "../images/borderlands-logo.jpg";
 
 SwiperCore.use([Navigation, Pagination]);
 
-const dataEstrenos = [
+const dataPopulares = [
   {
     id: 1,
-    name: "Valorant",
+    name: "League of Legends",
     owner: "Riot Games",
     off: "Free to play",
     price: "",
@@ -32,9 +32,9 @@ const dataEstrenos = [
 
   {
     id: 2,
-    name: "Cyberpunk 2077",
-    owner: "CD Projekt Red",
-    off: "- 33%",
+    name: "Assassin's Creed Valhalla",
+    owner: "Ubisoft",
+    off: "0",
     price: "$ 44.900",
     final_price: "$ 30.083",
     image: ImageCard_2,
@@ -43,9 +43,9 @@ const dataEstrenos = [
 
   {
     id: 3,
-    name: "Watch Dogs: Legion",
-    owner: "Ubisoft",
-    off: "- 15%",
+    name: "Grand theft auto 5",
+    owner: "Rockstar Games",
+    off: "0",
     price: "$ 39.990",
     final_price: "$ 33.990",
     image: ImageCard_3,
@@ -54,8 +54,8 @@ const dataEstrenos = [
 
   {
     id: 4,
-    name: "Death Stranding",
-    owner: "Kojima Productions",
+    name: "Rocket League",
+    owner: "Psyonix LLC",
     off: "- 50%",
     price: "$ 45.130",
     final_price: "$ 22.565",
@@ -65,8 +65,8 @@ const dataEstrenos = [
 
   {
     id: 5,
-    name: "Miles Morales",
-    owner: "Sony",
+    name: "Borderlands 3",
+    owner: "Gearbox Software",
     off: "- 33%",
     price: "$ 45.130",
     final_price: "$ 28.134",
@@ -75,12 +75,12 @@ const dataEstrenos = [
   },
 ];
 
-function EstrenosCarousel() {
+function PopularesCarousel() {
   return (
     <Swiper
       navigation={false}
       pagination={true}
-      className="estrenos__carousel-wrapper"
+      className="populares__carousel-wrapper"
       spaceBetween={40}
       slidesPerView={1}
       centeredSlides={true}
@@ -116,7 +116,7 @@ function EstrenosCarousel() {
         },
       }}
     >
-      {dataEstrenos.map((user) => (
+      {dataPopulares.map((user) => (
         <SwiperSlide key={user.id}>
           <div className="value-card">
             <div className="value-card__image">
@@ -149,4 +149,16 @@ function EstrenosCarousel() {
   );
 }
 
-export default EstrenosCarousel;
+let pill = document.querySelectorAll(
+  ".populares__carousel-wrapper .value-card__offer"
+);
+
+pill.forEach((el) => {
+  var valuePill = el.innerText;
+  console.log(valuePill);
+  if (valuePill === "0") {
+    el.style.display = "none";
+  }
+});
+
+export default PopularesCarousel;
