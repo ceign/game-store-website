@@ -37,11 +37,11 @@
 
 /*** End Swiper ***/
 
-/*** Media Queries ***/
-
 .estrenos__carousel-wrapper {
   padding-bottom: 6.5rem;
 }
+
+/*** Media Queries ***/
 
 /* 1240px */
 @media (min-width: 77.5em) {

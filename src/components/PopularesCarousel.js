@@ -34,9 +34,9 @@ const dataPopulares = [
     id: 2,
     name: "Assassin's Creed Valhalla",
     owner: "Ubisoft",
-    off: "0",
-    price: "$ 44.900",
-    final_price: "$ 30.083",
+    off: "",
+    price: "",
+    final_price: "$ 37.920",
     image: ImageCard_2,
     logo: LogoImageCard_2,
   },
@@ -45,9 +45,9 @@ const dataPopulares = [
     id: 3,
     name: "Grand theft auto 5",
     owner: "Rockstar Games",
-    off: "0",
-    price: "$ 39.990",
-    final_price: "$ 33.990",
+    off: "",
+    price: "",
+    final_price: "$ 29.980",
     image: ImageCard_3,
     logo: LogoImageCard_3,
   },
@@ -56,9 +56,9 @@ const dataPopulares = [
     id: 4,
     name: "Rocket League",
     owner: "Psyonix LLC",
-    off: "- 50%",
-    price: "$ 45.130",
-    final_price: "$ 22.565",
+    off: "Free to play",
+    price: "",
+    final_price: "",
     image: ImageCard_4,
     logo: LogoImageCard_4,
   },
@@ -67,9 +67,9 @@ const dataPopulares = [
     id: 5,
     name: "Borderlands 3",
     owner: "Gearbox Software",
-    off: "- 33%",
-    price: "$ 45.130",
-    final_price: "$ 28.134",
+    off: "- 28%",
+    price: "$ 38.990",
+    final_price: "$ 31.192",
     image: ImageCard_5,
     logo: LogoImageCard_5,
   },
@@ -86,12 +86,12 @@ function PopularesCarousel() {
       centeredSlides={true}
       freeMode={false}
       breakpoints={{
-        // when window width is >= 640px
+        // when window width is >= 321px
         321: {
           spaceBetween: 40,
           slidesPerView: 1.4,
         },
-
+        // when window width is >= 400px
         400: {
           spaceBetween: 20,
           slidesPerView: 1.4,
@@ -106,7 +106,7 @@ function PopularesCarousel() {
           spaceBetween: 40,
           slidesPerView: 3,
         },
-        // when window width is >= 1200px
+        // when window width is >= 1240px
         1240: {
           watchOverflow: true,
           spaceBetween: 0,
@@ -116,31 +116,31 @@ function PopularesCarousel() {
         },
       }}
     >
-      {dataPopulares.map((user) => (
-        <SwiperSlide key={user.id}>
+      {dataPopulares.map((item) => (
+        <SwiperSlide key={item.id}>
           <div className="value-card">
             <div className="value-card__image">
               <a href="/">
                 <img
-                  src={user.image}
+                  src={item.image}
                   alt=""
                   className="value-card__background"
                 />
-                <img src={user.logo} alt="" className="value-card__logo" />
+                <img src={item.logo} alt="" className="value-card__logo" />
               </a>
             </div>
             <div className="value-card__information">
               <h3>
-                {user.name}
-                <span>{user.owner}</span>
+                {item.name}
+                <span>{item.owner}</span>
               </h3>
 
-              <span className="value-card__offer">{user.off}</span>
+              <span className="value-card__offer">{item.off}</span>
             </div>
             <div className="value-card__price">
-              <span>{user.price}</span>
+              <span>{item.price}</span>
 
-              <span>{user.final_price}</span>
+              <span>{item.final_price}</span>
             </div>
           </div>
         </SwiperSlide>
@@ -148,17 +148,5 @@ function PopularesCarousel() {
     </Swiper>
   );
 }
-
-let pill = document.querySelectorAll(
-  ".populares__carousel-wrapper .value-card__offer"
-);
-
-pill.forEach((el) => {
-  var valuePill = el.innerText;
-  console.log(valuePill);
-  if (valuePill === "0") {
-    el.style.display = "none";
-  }
-});
 
 export default PopularesCarousel;

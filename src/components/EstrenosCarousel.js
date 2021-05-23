@@ -47,7 +47,7 @@ const dataEstrenos = [
     owner: "Ubisoft",
     off: "- 15%",
     price: "$ 39.990",
-    final_price: "$ 33.990",
+    final_price: "$ 33.992",
     image: ImageCard_3,
     logo: LogoImageCard_3,
   },
@@ -69,7 +69,7 @@ const dataEstrenos = [
     owner: "Sony",
     off: "- 33%",
     price: "$ 45.130",
-    final_price: "$ 28.134",
+    final_price: "$ 30.238",
     image: ImageCard_5,
     logo: LogoImageCard_5,
   },
@@ -86,12 +86,12 @@ function EstrenosCarousel() {
       centeredSlides={true}
       freeMode={false}
       breakpoints={{
-        // when window width is >= 640px
+        // when window width is >= 321px
         321: {
           spaceBetween: 40,
           slidesPerView: 1.4,
         },
-
+        // when window width is >= 400px
         400: {
           spaceBetween: 20,
           slidesPerView: 1.4,
@@ -106,7 +106,7 @@ function EstrenosCarousel() {
           spaceBetween: 40,
           slidesPerView: 3,
         },
-        // when window width is >= 1200px
+        // when window width is >= 1240px
         1240: {
           watchOverflow: true,
           spaceBetween: 0,
@@ -116,31 +116,31 @@ function EstrenosCarousel() {
         },
       }}
     >
-      {dataEstrenos.map((user) => (
-        <SwiperSlide key={user.id}>
+      {dataEstrenos.map((item) => (
+        <SwiperSlide key={item.id}>
           <div className="value-card">
             <div className="value-card__image">
               <a href="/">
                 <img
-                  src={user.image}
+                  src={item.image}
                   alt=""
                   className="value-card__background"
                 />
-                <img src={user.logo} alt="" className="value-card__logo" />
+                <img src={item.logo} alt="" className="value-card__logo" />
               </a>
             </div>
             <div className="value-card__information">
               <h3>
-                {user.name}
-                <span>{user.owner}</span>
+                {item.name}
+                <span>{item.owner}</span>
               </h3>
 
-              <span className="value-card__offer">{user.off}</span>
+              <span className="value-card__offer">{item.off}</span>
             </div>
             <div className="value-card__price">
-              <span>{user.price}</span>
+              <span>{item.price}</span>
 
-              <span>{user.final_price}</span>
+              <span>{item.final_price}</span>
             </div>
           </div>
         </SwiperSlide>

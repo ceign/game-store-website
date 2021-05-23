@@ -37,29 +37,11 @@
 
 /*** End Swiper ***/
 
-.populares__carousel-wrapper {
-  padding-bottom: 6.5rem;
-}
-
-.populares__carousel-wrapper {
-  padding-bottom: 6.5rem;
-}
-
-.populares__carousel-wrapper .swiper-slide:first-child .value-card__offer,
-.populares__carousel-wrapper .swiper-slide:nth-child(4) .value-card__offer {
-  min-width: 100px;
-}
-
-.populares__carousel-wrapper .swiper-slide:nth-child(2) .value-card__offer,
-.populares__carousel-wrapper .swiper-slide:nth-child(3) .value-card__offer {
-  display: none;
-}
-
 /*** Media Queries ***/
 
 /* 1240px */
 @media (min-width: 77.5em) {
-  .populares__carousel-wrapper {
+  .lanzamientos__carousel-wrapper {
     max-width: 1240px;
     margin: auto;
   }
@@ -67,8 +49,8 @@
 
 /* 1600px */
 @media (min-width: 100em) {
-  .populares__carousel-wrapper {
-    max-width: 1590px;
+  .lanzamientos__carousel-wrapper {
+    max-width: 1620px;
     padding-bottom: 10rem;
   }
 }

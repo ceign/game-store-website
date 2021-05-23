@@ -1,0 +1,116 @@
+.reserve-card {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 0 auto 5rem;
+}
+
+.reserve-card .reserve-card__image {
+  width: 100%;
+  height: 210px;
+}
+
+.reserve-card .reserve-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.reserve-card .reserve-card__information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+}
+
+.reserve-card .reserve-card__information h3 {
+  color: var(--white-secondary);
+  width: 100%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 100%;
+  margin-top: 5px;
+}
+
+.reserve-card .reserve-card__information h3 span {
+  display: block;
+  color: var(--light-gray);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 1.1875rem;
+  line-height: 100%;
+  margin-top: 1rem;
+}
+
+.reserve-card__button {
+  width: 100%;
+}
+
+.reserve-card__button a {
+  color: var(--black);
+  background-color: var(--fall-guys-cta);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 2rem auto 0;
+}
+
+/*** Media Queries ***/
+
+/* 768px */
+@media (min-width: 48em) {
+  .reserve-card {
+    min-width: 370px;
+  }
+}
+
+/* 1240px */
+@media (min-width: 77.5em) {
+  .reserve-card .reserve-card__information {
+    flex-direction: row;
+  }
+
+  .reserve-card .reserve-card__information h3 {
+    font-size: 1.05rem;
+  }
+
+  .reserve-card .reserve-card__information h3 span {
+    font-size: 1.1rem;
+  }
+
+  .reserve-card__button a {
+    margin: 10px 0 0;
+  }
+}
+
+/* 1600px */
+@media (min-width: 100em) {
+  .reserve-card {
+    min-width: 450px;
+  }
+
+  .reserve-card .reserve-card__image {
+    height: 260px;
+  }
+
+  .reserve-card .reserve-card__information h3 {
+    font-size: 1.25rem;
+  }
+}

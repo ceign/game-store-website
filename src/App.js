@@ -8,6 +8,8 @@ import PaladinsJumbotron from "./components/PaladinsJumbotron";
 import Exclusivos from "./components/Exclusivos";
 import Populares from "./components/Populares";
 import PopularesCarosuel from "./components/PopularesCarousel";
+import Lanzamientos from "./components/Lanzamientos";
+import LanzamientosCarousel from "./components/LanzamientosCarousel";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <Exclusivos />
       <Populares />
       <PopularesCarosuel />
+      <Lanzamientos />
+      <LanzamientosCarousel />
     </>
   );
 }

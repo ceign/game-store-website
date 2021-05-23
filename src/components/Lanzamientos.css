@@ -1,0 +1,69 @@
+.lanzamientos {
+  width: 100%;
+  height: auto;
+  padding: 4rem 0 1rem 1.5rem;
+}
+
+.lanzamientos__wrapper .lanzamientos__title {
+  padding-bottom: 4rem;
+}
+
+.lanzamientos__wrapper .lanzamientos__title h2 {
+  color: var(--white-secondary);
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.7px;
+}
+
+.lanzamientos__wrapper .lanzamientos__title h2::before {
+  content: "";
+  width: 100%;
+  max-width: 300px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  background: rgb(9, 9, 9);
+  background: linear-gradient(
+    260deg,
+    rgba(9, 9, 9, 1) 0%,
+    rgba(193, 178, 39, 1) 95%
+  );
+}
+
+.lanzamientos__cards {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+/*** Media Queries ***/
+
+/* 768px */
+@media (min-width: 48em) {
+  .lanzamientos {
+    padding: 4rem 0 1rem 3.5rem;
+  }
+
+  .lanzamientos__wrapper .lanzamientos__title {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 77.5em) {
+  .lanzamientos__wrapper {
+    max-width: 1240px;
+    margin: auto;
+  }
+}
+
+/* 1600px */
+@media (min-width: 100em) {
+  .lanzamientos__wrapper {
+    max-width: 1590px;
+    margin: auto;
+  }
+}
