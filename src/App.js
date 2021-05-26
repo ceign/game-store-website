@@ -10,6 +10,8 @@ import Populares from "./components/Populares";
 import PopularesCarosuel from "./components/PopularesCarousel";
 import Lanzamientos from "./components/Lanzamientos";
 import LanzamientosCarousel from "./components/LanzamientosCarousel";
+import ClasicoDelMes from "./components/ClasicoDelMes";
+import WakfuJumbotron from "./components/WakfuJumbotron";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <PopularesCarosuel />
       <Lanzamientos />
       <LanzamientosCarousel />
+      <ClasicoDelMes />
+      <WakfuJumbotron />
     </>
   );
 }

@@ -1,0 +1,242 @@
+.wakfu-jumbotron {
+  padding: 4rem 1.5rem 3rem;
+  margin-bottom: 8rem;
+}
+
+.wakfu-jumbotron__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 260px auto;
+  width: 100%;
+  max-width: 380px;
+  height: 640px;
+  background: linear-gradient(96.97deg, #6c002b 7.69%, #960038 45.96%);
+  border-radius: 8px;
+  margin: auto;
+}
+
+.wakfu-jumbotron__characters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.wakfu-jumbotron__characters img:first-child {
+  position: relative;
+  bottom: 6rem;
+  width: 100%;
+  max-width: 360px;
+  height: 350px;
+  object-fit: cover;
+  filter: drop-shadow(4px 10px 3px #2e0313);
+}
+
+.wakfu-jumbotron__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.wakfu-jumbotron__characters img:last-child {
+  display: none;
+}
+
+.wakfu-jumbotron__content .wakfu-jumbotron__logo {
+  width: 210px;
+}
+
+.wakfu-jumbotron__content p {
+  color: var(--white);
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding: 0 1rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.wakfu-jumbotron__content p span {
+  font-weight: 600;
+}
+
+.wakfu-jumbotron__content p span:last-child {
+  display: block;
+}
+
+.wakfu-jumbotron__content .wakfu-jumbotron__button {
+  color: var(--white);
+  background-color: var(--wakfu-paladins-button);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 280px;
+  height: 48px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 1rem 1rem 3.5rem;
+}
+
+.wakfu-jumbotron__content .wakfu-jumbotron__demo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 8px 8px;
+}
+
+/*** Media Queries ***/
+
+/* 320px */
+@media (max-width: 20em) {
+  .wakfu-jumbotron__characters img:first-child {
+    height: 295px;
+    bottom: 4rem;
+  }
+
+  .wakfu-jumbotron__content .wakfu-jumbotron__button {
+    max-width: 230px;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .wakfu-jumbotron {
+    padding-top: 5rem;
+  }
+}
+
+/* 1024px */
+@media (min-width: 64em) {
+  .wakfu-jumbotron {
+    padding-top: 2rem;
+  }
+
+  .wakfu-jumbotron__wrapper {
+    max-width: 500px;
+  }
+}
+
+/* 1240px */
+@media (min-width: 77.5em) {
+  .wakfu-jumbotron__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 1180px;
+    height: 460px;
+    min-height: inherit;
+  }
+
+  .wakfu-jumbotron__characters {
+    grid-column: 2 / -1;
+    grid-row: 1 /2;
+    align-self: center;
+    height: 100%;
+  }
+
+  .wakfu-jumbotron__content {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem 0 0 6rem;
+  }
+
+  .wakfu-jumbotron__content p {
+    max-width: 65%;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .wakfu-jumbotron__content .wakfu-jumbotron__button {
+    max-width: 250px;
+    margin: 2rem 0;
+  }
+
+  .wakfu-jumbotron__content .wakfu-jumbotron__demo {
+    max-width: 250px;
+    height: 90px;
+    border-radius: 0;
+    object-fit: cover;
+  }
+
+  .wakfu-jumbotron__characters img:first-child {
+    z-index: 1;
+    position: absolute;
+    top: -7rem;
+    right: -3rem;
+    bottom: inherit;
+    max-width: 430px;
+    height: 400px;
+    left: inherit;
+    object-fit: contain;
+  }
+
+  .wakfu-jumbotron__characters img:last-child {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    right: initial;
+    bottom: 3rem;
+    left: -4rem;
+    width: 370px;
+    height: auto;
+    object-fit: contain;
+    transform: rotate(360deg);
+    filter: drop-shadow(4px 10px 3px #2e0313);
+  }
+}
+
+/* 1600px */
+@media (min-width: 100em) {
+  .wakfu-jumbotron__wrapper {
+    max-width: 1530px;
+    height: 570px;
+  }
+
+  .wakfu-jumbotron__content {
+    padding: 2rem 0 0 8rem;
+  }
+
+  .wakfu-jumbotron__content .wakfu-jumbotron__logo {
+    width: 300px;
+  }
+
+  .wakfu-jumbotron__content p {
+    max-width: 60%;
+    font-size: 1.45rem;
+    line-height: 1.4;
+  }
+
+  .wakfu-jumbotron__content .wakfu-jumbotron__button {
+    max-width: 300px;
+  }
+
+  .wakfu-jumbotron__content .wakfu-jumbotron__demo {
+    max-width: 300px;
+    height: 130px;
+  }
+
+  .wakfu-jumbotron__characters img:first-child {
+    top: -8rem;
+    right: -2rem;
+    left: inherit;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .wakfu-jumbotron__characters img:last-child {
+    right: -2rem;
+    width: 480px;
+    height: auto;
+  }
+}
