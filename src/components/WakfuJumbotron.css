@@ -147,7 +147,7 @@
     grid-row: 1 /2;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 2rem 0 0 6rem;
+    padding: 3rem 0 0 6rem;
   }
 
   .wakfu-jumbotron__content p {
@@ -204,7 +204,7 @@
   }
 
   .wakfu-jumbotron__content {
-    padding: 2rem 0 0 8rem;
+    padding: 3.5rem 0 0 8rem;
   }
 
   .wakfu-jumbotron__content .wakfu-jumbotron__logo {
