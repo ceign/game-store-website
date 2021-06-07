@@ -118,6 +118,7 @@
 @media (min-width: 64em) {
   .wakfu-jumbotron {
     padding-top: 2rem;
+    margin-bottom: 6rem;
   }
 
   .wakfu-jumbotron__wrapper {

@@ -12,6 +12,7 @@ import Lanzamientos from "./components/Lanzamientos";
 import LanzamientosCarousel from "./components/LanzamientosCarousel";
 import ClasicoDelMes from "./components/ClasicoDelMes";
 import WakfuJumbotron from "./components/WakfuJumbotron";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <LanzamientosCarousel />
       <ClasicoDelMes />
       <WakfuJumbotron />
+      <Footer />
     </>
   );
 }
