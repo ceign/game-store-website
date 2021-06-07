@@ -238,6 +238,17 @@
 /* 1600px */
 @media (min-width: 100em) {
   .footer__wrapper {
+    grid-template-columns: minmax(min-content, 700px) 1fr;
     max-width: 1530px;
+  }
+
+  .footer-items .footer-items__resources {
+    grid-template-columns: repeat(3, minmax(min-content, 230px));
+  }
+
+  .footer-subscribe .footer-subscribe__wrapper {
+    max-width: 540px;
+    min-height: 310px;
+    padding: 4rem 1.5rem 3rem 5rem;
   }
 }
