@@ -8,9 +8,23 @@ const Footer = () => {
         <div className="footer-subscribe">
           <div className="footer-subscribe__wrapper">
             <h2>Suscribete para el catálogo completo</h2>
+            <p className="footer-subscribe__text">
+              ¡Te actualizaremos de todas las novedades y próximos lanzamientos!
+            </p>
             <div className="footer-subscribe__input">
-              <p>Correo</p>
+              <input type="text" />
             </div>
+            <div className="footer-subscribe__privacy-policies">
+              <div className="footer-subscribe__switch">
+                <span></span>
+              </div>
+              <p>
+                Acepto la <span>Politica de Privacidad</span>
+              </p>
+            </div>
+            <a href="/" className="footer-subscribe__button">
+              Suscribirme
+            </a>
           </div>
         </div>
 
@@ -63,5 +77,10 @@ const Footer = () => {
     </section>
   );
 };
+
+//var buttonSwitch = document.querySelector(".footer-subscribe__switch span");
+//buttonSwitch.addEventListener("click", () => {
+//buttonSwitch.classList.toggle("footer-subscribe__switch--accept");
+//});
 
 export default Footer;

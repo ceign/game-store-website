@@ -72,7 +72,7 @@
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: 2px;
   margin: auto;
 }
 
@@ -202,7 +202,7 @@ p {
 }
 
 .fall-guys__carrousel .fall-guys__button a {
-  color: var(--black);
+  color: var(--white);
   background-color: var(--fall-guys-cta);
   display: flex;
   flex-direction: row;
@@ -217,7 +217,7 @@ p {
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: 2px;
   margin: 4rem auto 0;
 }
 
@@ -254,8 +254,8 @@ p {
 
 /* 1240px */
 @media (min-width: 77.5em) {
-  .paladins-jumbotron {
-    margin-bottom: 2rem;
+  .fall-guys {
+    padding: 4rem 1.5rem 4rem;
   }
 
   .fall-guys__wrapper {

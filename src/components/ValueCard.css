@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .value-card .value-card__image .value-card__logo {
@@ -70,7 +70,7 @@
   line-height: 100%;
   text-transform: uppercase;
   padding: 0.625rem;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .value-card .value-card__price {

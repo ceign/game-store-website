@@ -83,7 +83,7 @@
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: 2px;
   margin: 1rem 1rem 3.5rem;
 }
 
@@ -122,11 +122,15 @@
 
 /* 1240px */
 @media (min-width: 77.5em) {
+  .paladins-jumbotron {
+    margin-bottom: 2rem;
+  }
+
   .paladins-jumbotron__wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     max-width: 1180px;
-    height: 460px;
+    height: 490px;
     min-height: inherit;
   }
 
@@ -159,7 +163,7 @@
 
   .paladins-jumbotron__content .paladins-jumbotron__demo {
     max-width: 250px;
-    height: 90px;
+    height: 120px;
     border-radius: 0;
     object-fit: cover;
   }
@@ -179,7 +183,7 @@
     position: absolute;
     width: 380px;
     height: 410px;
-    bottom: 6rem;
+    bottom: 6.5rem;
     left: -1rem;
     object-fit: contain;
     transform: scaleX(-1);
