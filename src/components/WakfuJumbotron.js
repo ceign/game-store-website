@@ -25,7 +25,11 @@ const WakfuJumbotron = () => {
             llegado <span>¡A batallar!</span>
           </p>
 
-          <a href="/" className="wakfu-jumbotron__button">
+          <a
+            href="/"
+            className="wakfu-jumbotron__button"
+            onClick={(event) => event.preventDefault()}
+          >
             Entrar
           </a>
         </div>

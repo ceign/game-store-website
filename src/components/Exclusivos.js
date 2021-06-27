@@ -16,7 +16,11 @@ const Exclusivos = () => {
               Gana puntos por sobrevivir y canjea skins especiales de la
               temporada invierno.
             </p>
-            <a href="/" className="fall-guys__medium-card__button">
+            <a
+              href="/"
+              className="fall-guys__medium-card__button"
+              onClick={(event) => event.preventDefault()}
+            >
               Visitar evento
             </a>
           </div>
@@ -56,7 +60,9 @@ const Exclusivos = () => {
           </div>
 
           <div className="fall-guys__button">
-            <a href="/">Ver todos los eventos</a>
+            <a href="/" onClick={(event) => event.preventDefault()}>
+              Ver todos los eventos
+            </a>
           </div>
         </div>
       </div>

@@ -71,7 +71,7 @@ function LanzamientosCarousel() {
         <SwiperSlide key={item.id}>
           <div className="reserve-card">
             <div className="reserve-card__image">
-              <a href="/">
+              <a href="/" onClick={(event) => event.preventDefault()}>
                 <img
                   src={item.image}
                   alt=""
@@ -85,7 +85,9 @@ function LanzamientosCarousel() {
               </h3>
 
               <div className="reserve-card__button">
-                <a href="/">Reservar</a>
+                <a href="/" onClick={(event) => event.preventDefault()}>
+                  Reservar
+                </a>
               </div>
             </div>
           </div>

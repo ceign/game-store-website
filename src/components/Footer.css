@@ -276,18 +276,11 @@
   }
 
   .footer-items {
-    grid-column: 1/2;
-    grid-row: 1/2;
     padding: 0 0 0 5rem;
   }
 
   .footer-items .footer-items__resources {
     grid-template-columns: minmax(min-content, 230px) auto;
-  }
-
-  .footer-disclaymer {
-    grid-column: 1/2;
-    grid-row: 2/-1;
   }
 }
 
@@ -319,8 +312,13 @@
     height: 100%;
   }
 
+  .footer-information {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
   .footer-items {
-    padding: 0;
+    padding: 0 0 1rem 0;
   }
 
   .footer-items .footer-items__resources {

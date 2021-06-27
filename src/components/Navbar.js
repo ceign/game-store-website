@@ -16,16 +16,24 @@ const Navbar = () => {
         <div className="navbar__navigation">
           <ul>
             <li>
-              <a href="/">Inicio</a>
+              <a href="/" onClick={(event) => event.preventDefault()}>
+                Inicio
+              </a>
             </li>
             <li>
-              <a href="/">Estrenos</a>
+              <a href="/" onClick={(event) => event.preventDefault()}>
+                Estrenos
+              </a>
             </li>
             <li>
-              <a href="/">Juegos AAA</a>
+              <a href="/" onClick={(event) => event.preventDefault()}>
+                Juegos AAA
+              </a>
             </li>
             <li>
-              <a href="/">Populares</a>
+              <a href="/" onClick={(event) => event.preventDefault()}>
+                Populares
+              </a>
             </li>
           </ul>
         </div>

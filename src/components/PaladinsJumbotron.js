@@ -29,7 +29,11 @@ const Jumbotron = () => {
             dentro de las siguientes 24 horas<span>!</span>
           </p>
 
-          <a href="/" className="paladins-jumbotron__button">
+          <a
+            href="/"
+            className="paladins-jumbotron__button"
+            onClick={(event) => event.preventDefault()}
+          >
             Visitar evento
           </a>
 

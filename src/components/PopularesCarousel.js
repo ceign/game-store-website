@@ -120,7 +120,7 @@ function PopularesCarousel() {
         <SwiperSlide key={item.id}>
           <div className="value-card">
             <div className="value-card__image">
-              <a href="/">
+              <a href="/" onClick={(event) => event.preventDefault()}>
                 <img
                   src={item.image}
                   alt=""

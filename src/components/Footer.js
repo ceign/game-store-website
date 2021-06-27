@@ -20,7 +20,7 @@ class Footer extends React.Component {
                 lanzamientos!
               </p>
               <div className="footer-subscribe__input">
-                <input type="text" />
+                <input type="text" maxLength="28" />
               </div>
               <div className="footer-subscribe__privacy-policies">
                 <div
@@ -37,56 +37,62 @@ class Footer extends React.Component {
                   Acepto la <span>Politica de Privacidad</span>
                 </p>
               </div>
-              <a href="/" className="footer-subscribe__button">
+              <a
+                href="/"
+                className="footer-subscribe__button"
+                onClick={(event) => event.preventDefault()}
+              >
                 Suscribirme
               </a>
             </div>
           </div>
 
-          <div className="footer-items">
-            <h3>Recursos</h3>
+          <div className="footer-information">
+            <div className="footer-items">
+              <h3>Recursos</h3>
 
-            <div className="footer-items__resources">
-              <ul>
-                <li>Apoya a la comunidad</li>
-                <li>Publíca en la plataforma</li>
-                <li>Galería de gráficos</li>
-              </ul>
-              <ul>
-                <li>Servicios en línea</li>
-                <li>Políticas de arte</li>
-                <li>Estudios</li>
-              </ul>
-              <ul>
-                <li>Club de la tienda</li>
-                <li>Servicios en línea</li>
-                <li>Reglas de la comunidad</li>
-              </ul>
+              <div className="footer-items__resources">
+                <ul>
+                  <li>Apoya a la comunidad</li>
+                  <li>Publíca en la plataforma</li>
+                  <li>Galería de gráficos</li>
+                </ul>
+                <ul>
+                  <li>Servicios en línea</li>
+                  <li>Políticas de arte</li>
+                  <li>Estudios</li>
+                </ul>
+                <ul>
+                  <li>Club de la tienda</li>
+                  <li>Servicios en línea</li>
+                  <li>Reglas de la comunidad</li>
+                </ul>
+              </div>
+
+              <h3>Empresa</h3>
+
+              <div className="footer-items__resources">
+                <ul>
+                  <li>Contacto</li>
+                  <li>Conferencias</li>
+                  <li>Novedades 2022</li>
+                </ul>
+                <ul>
+                  <li>Agenda</li>
+                  <li>Colaboradores</li>
+                </ul>
+              </div>
             </div>
 
-            <h3>Empresa</h3>
-
-            <div className="footer-items__resources">
-              <ul>
-                <li>Contacto</li>
-                <li>Conferencias</li>
-                <li>Novedades 2022</li>
-              </ul>
-              <ul>
-                <li>Agenda</li>
-                <li>Colaboradores</li>
-              </ul>
+            <div className="footer-disclaymer">
+              <p>
+                © 2022. Todos los derechos reservados. El logotipo de Fortnite,
+                el logotipo Unreal, Unreal Engine, Unreal Tournament y el
+                logotipo de todos los juegos en el catálogo son marcas
+                comerciales o marcas registradas tanto en América Latina como en
+                el resto del mundo, y pertenecen a sus respectivas compañías.
+              </p>
             </div>
-          </div>
-
-          <div className="footer-disclaymer">
-            <p>
-              © 2022. Todos los derechos reservados. El logotipo de Fortnite, el
-              logotipo Unreal, Unreal Engine, Unreal Tournament y el logotipo de
-              todos los juegos en el catálogo son marcas comerciales o marcas
-              registradas tanto en América Latina como en el resto del mundo, y
-              pertenecen a sus respectivas compañías.
-            </p>
           </div>
         </div>
       </section>

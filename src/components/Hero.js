@@ -28,7 +28,11 @@ const Hero = () => {
 
             <h3>La temporada de la venganza ya está aquí.</h3>
 
-            <a href="/" className="hero__reserve-cta">
+            <a
+              href="/"
+              className="hero__reserve-cta"
+              onClick={(event) => event.preventDefault()}
+            >
               <p>Reservar Ahora</p>
               <span>
                 <img src={calendarIcon} alt="" />
@@ -38,11 +42,11 @@ const Hero = () => {
 
           <div className="hero__reserve-footer">
             <div className="hero__reserve-buttons">
-              <a href="/">
+              <a href="/" onClick={(event) => event.preventDefault()}>
                 <img src={arrowPrevIcon} alt="Anterior" />
               </a>
 
-              <a href="/">
+              <a href="/" onClick={(event) => event.preventDefault()}>
                 <img src={arrowNextIcon} alt="Siguiente" />
               </a>
             </div>
