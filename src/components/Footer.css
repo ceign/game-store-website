@@ -105,7 +105,7 @@
   height: 14px;
   border-radius: 2px;
   cursor: pointer;
-  transition: transform, color, 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /*** Transition for Switch component added from JavaScript ***/
@@ -117,7 +117,7 @@
   height: 14px;
   border-radius: 2px;
   cursor: pointer;
-  transition: transform, color, 0.2s ease;
+  transition: all 0.2s ease;
   transform: translateX(calc(100% + 10px));
 }
 
