@@ -87,7 +87,8 @@
   margin-top: 2rem;
 }
 
-.footer-subscribe__privacy-policies .footer-subscribe__switch {
+.footer-subscribe__privacy-policies .footer-subscribe__switch--off,
+.footer-subscribe__privacy-policies .footer-subscribe__switch--on {
   display: inline-flex;
   align-items: center;
   width: 70px;
@@ -97,7 +98,7 @@
   border-radius: 2px;
 }
 
-.footer-subscribe__privacy-policies .footer-subscribe__switch span {
+.footer-subscribe__privacy-policies .footer-subscribe__switch--off span {
   background-color: var(--gray-text);
   display: block;
   width: 14px;
@@ -109,10 +110,14 @@
 
 /*** Transition for Switch component added from JavaScript ***/
 
-.footer-subscribe__privacy-policies
-  .footer-subscribe__switch
-  span.footer-subscribe__switch--accept {
+.footer-subscribe__privacy-policies .footer-subscribe__switch--on span {
   background-color: var(--yellow);
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform, color, 0.2s ease;
   transform: translateX(calc(100% + 10px));
 }
 
