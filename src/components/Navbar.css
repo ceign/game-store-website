@@ -89,7 +89,14 @@
 }
 
 .navbar__navigation ul li {
-  margin-right: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 1.25rem;
+  border-radius: 3px;
+  transition: 0.3s background-color ease;
+}
+
+.navbar__navigation ul li:hover {
+  background-color: rgba(199, 199, 199, 0.2);
 }
 
 .navbar__navigation ul li a {
@@ -139,7 +146,40 @@
 
 .navbar__account-buttons .navbar__account-button {
   position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
   cursor: pointer;
+  border-radius: 50%;
+}
+
+.navbar__account-buttons .navbar__account-button img {
+  width: auto;
+  position: relative;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+}
+
+.navbar__account-buttons .navbar__account-button img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 0px transparent;
+  border-radius: 50%;
+  background-color: #c7c7c733;
+  opacity: 0;
+  z-index: -1;
+}
+
+.navbar__account-buttons .navbar__account-button:hover img {
+  box-shadow: 0 0 0 10px #c7c7c733;
+  background-color: #c7c7c733;
+  opacity: 1;
 }
 
 .navbar__account-buttons .navbar__account-button span {
@@ -150,8 +190,8 @@
   height: 18px;
   position: absolute;
   border-radius: 50%;
-  top: -8px;
-  right: -10px;
+  top: 4px;
+  right: 0px;
 }
 
 /*** Media Queries ***/
@@ -229,7 +269,7 @@
 @media (min-width: 77.5em) {
   .navbar__wrapper {
     max-width: 1440px;
-    grid-template-columns: auto 30% 30% 15% 5%;
+    grid-template-columns: auto 35% 30% 15% 5%;
     grid-gap: 0 1.5rem;
     margin: auto;
   }

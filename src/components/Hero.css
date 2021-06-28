@@ -149,6 +149,7 @@
   width: 30px;
   height: 30px;
   border-radius: 2px;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .hero__reserve-footer .hero__reserve-buttons a:hover {
