@@ -7,9 +7,32 @@
 .value-card .value-card__image {
   width: 100%;
   height: 420px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.value-card .value-card__image a {
+.value-card
+  .value-card__image
+  .value-card__image-wrapper
+  .value-card__background {
+  transition: 0.3s transform ease-in-out;
+  border-radius: 4px;
+}
+
+.value-card
+  .value-card__image:hover
+  .value-card__image-wrapper
+  .value-card__background {
+  transform: scale(1.1);
+  transition-delay: 0.1s;
+}
+
+.value-card .value-card__image:hover .value-card__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.value-card .value-card__image .value-card__image-wrapper {
   position: relative;
   display: inline-block;
   width: 100%;
@@ -33,6 +56,184 @@
   object-fit: contain;
 }
 
+.value-card__overlay {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 1.5rem 2.5rem;
+  background-color: rgba(5, 5, 5, 0.08);
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease;
+}
+
+.value-card__overlay > *,
+.value-card__overlay {
+  z-index: 1;
+}
+
+.value-card__overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 5, 5, 0.95) 45%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.value-card__overlay .value-card__favorite {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  cursor: pointer;
+}
+
+.value-card__overlay .value-card__favorite span {
+  border: 2px solid var(--cta-value-card);
+  display: inline-block;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.value-card__overlay .value-card__favorite span::before {
+  background-color: var(--cta-value-card);
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 10px;
+  top: calc(50% - 5px);
+  left: calc(50% - 1px);
+}
+
+.value-card__overlay .value-card__favorite span::after {
+  background-color: var(--cta-value-card);
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: calc(50% - 1px);
+  left: calc(50% - 5px);
+}
+
+.value-card__overlay .value-card__favorite span:hover {
+  background-color: var(--cta-value-card);
+}
+
+.value-card__overlay .value-card__favorite span:hover::before,
+.value-card__overlay .value-card__favorite span:hover::after {
+  background-color: var(--black);
+}
+
+.value-card__overlay p {
+  color: var(--white);
+  font-family: "Exo 2", sans-serif;
+  font-weight: 100;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 1rem 0 1.75rem;
+}
+
+.value-card__overlay .value-card__button {
+  color: var(--black);
+  background-color: var(--cta-value-card);
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 38px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0 2px;
+}
+
+.value-card__overlay .value-card__button:hover {
+  background-color: #ffe600;
+}
+
+.value-card__overlay .value-card__button::after,
+.value-card__overlay .value-card__button::before {
+  background-color: var(--black);
+  content: "";
+  position: absolute;
+}
+
+.value-card__overlay .value-card__button::after {
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+}
+
+.value-card__overlay .value-card__button::before {
+  bottom: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+}
+
+.value-card__overlay .value-card__button span {
+  background-color: var(--cta-value-card);
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 1px;
+}
+
+.value-card__overlay .value-card__button span:first-child {
+  top: -6px;
+  left: -2px;
+}
+
+.value-card__overlay .value-card__button span:last-child {
+  bottom: -6px;
+  left: -2px;
+}
+
+.value-card__overlay .value-card__button span:first-child::before,
+.value-card__overlay .value-card__button span:first-child::after {
+  background-color: var(--cta-value-card);
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 36px;
+}
+
+.value-card__overlay .value-card__button span:first-child::before {
+  top: 2px;
+  left: -3px;
+}
+
+.value-card__overlay .value-card__button span:first-child::after {
+  top: 10px;
+  right: -3px;
+}
+
 .value-card .value-card__information {
   display: flex;
   align-items: flex-start;
@@ -52,8 +253,8 @@
 }
 
 .value-card .value-card__information h3 span {
-  display: block;
   color: var(--light-gray);
+  display: block;
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
   font-size: 1.1875rem;
@@ -131,6 +332,22 @@
     height: 320px;
   }
 
+  .value-card__overlay p {
+    font-size: 0.875rem;
+    line-height: 1.3;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .value-card__overlay .value-card__button {
+    height: 32px;
+    font-size: 0.6875rem;
+  }
+
+  .value-card__overlay .value-card__button span:first-child::before,
+  .value-card__overlay .value-card__button span:first-child::after {
+    height: 32px;
+  }
+
   .value-card .value-card__information h3 {
     font-size: 1rem;
   }
@@ -156,6 +373,22 @@
 
   .value-card .value-card__image {
     height: 420px;
+  }
+
+  .value-card__overlay p {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin: 1rem 0 1.75rem;
+  }
+
+  .value-card__overlay .value-card__button {
+    height: 38px;
+    font-size: 0.75rem;
+  }
+
+  .value-card__overlay .value-card__button span:first-child::before,
+  .value-card__overlay .value-card__button span:first-child::after {
+    height: 36px;
   }
 
   .value-card .value-card__information h3 {

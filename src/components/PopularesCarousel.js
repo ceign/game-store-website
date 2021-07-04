@@ -28,6 +28,7 @@ const dataPopulares = [
     final_price: "",
     image: ImageCard_1,
     logo: LogoImageCard_1,
+    description: "Más de 140 campeones para hacer jugadas épicas.",
   },
 
   {
@@ -39,6 +40,7 @@ const dataPopulares = [
     final_price: "$ 37.920",
     image: ImageCard_2,
     logo: LogoImageCard_2,
+    description: "Acción ambientada durante la invasión vikinga de Inglaterra.",
   },
 
   {
@@ -50,6 +52,7 @@ const dataPopulares = [
     final_price: "$ 29.980",
     image: ImageCard_3,
     logo: LogoImageCard_3,
+    description: "Completa misiones y domina la ciudad de Los Santos.",
   },
 
   {
@@ -61,6 +64,7 @@ const dataPopulares = [
     final_price: "",
     image: ImageCard_4,
     logo: LogoImageCard_4,
+    description: "Combinación perfecta entre autos y futbol. ¡A ganar!",
   },
 
   {
@@ -72,6 +76,7 @@ const dataPopulares = [
     final_price: "$ 31.192",
     image: ImageCard_5,
     logo: LogoImageCard_5,
+    description: "Disparos en primera persona con elementos de rol y acción.",
   },
 ];
 
@@ -120,14 +125,32 @@ function PopularesCarousel() {
         <SwiperSlide key={item.id}>
           <div className="value-card">
             <div className="value-card__image">
-              <a href="/" onClick={(event) => event.preventDefault()}>
+              <div className="value-card__image-wrapper">
                 <img
                   src={item.image}
                   alt=""
                   className="value-card__background"
                 />
                 <img src={item.logo} alt="" className="value-card__logo" />
-              </a>
+
+                <div className="value-card__overlay">
+                  <div className="value-card__favorite">
+                    <span className="value-card__icon"></span>
+                  </div>
+
+                  <p>{item.description}</p>
+
+                  <a
+                    href="/"
+                    className="value-card__button"
+                    onClick={(event) => event.preventDefault()}
+                  >
+                    Comprar Ahora
+                    <span></span>
+                    <span></span>
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="value-card__information">
               <h3>
