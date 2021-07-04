@@ -22,7 +22,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="/" onClick={(event) => event.preventDefault()}>
-                Estrenos
+                Explorar
               </a>
             </li>
             <li>
@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="/" onClick={(event) => event.preventDefault()}>
-                Populares
+                Aclamados
               </a>
             </li>
           </ul>
