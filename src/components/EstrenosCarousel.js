@@ -40,7 +40,7 @@ const dataEstrenos = [
     final_price: "$ 30.083",
     image: ImageCard_2,
     logo: LogoImageCard_2,
-    description: "Domina toda la acción y haz lo tuyo en Night City.",
+    description: "Domina toda la acción y haz lo tuyo en la gran Night City.",
   },
 
   {
