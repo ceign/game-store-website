@@ -127,6 +127,10 @@
   margin: auto;
 }
 
+.hero__reserve-body .hero__reserve-cta:hover {
+  background-color: #ffffff;
+}
+
 .hero__reserve-body .hero__reserve-cta p {
   color: var(--black-text);
   font-family: "Exo 2", sans-serif;

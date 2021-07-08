@@ -89,6 +89,10 @@
   margin: 1rem 1rem 3.5rem;
 }
 
+.wakfu-jumbotron__content .wakfu-jumbotron__button:hover {
+  background-color: #610426;
+}
+
 .wakfu-jumbotron__content .wakfu-jumbotron__demo {
   width: 100%;
   object-fit: cover;

@@ -58,7 +58,7 @@
 
 .fall-guys__medium-card .fall-guys__medium-card__button {
   color: var(--blue-text);
-  background-color: var(--white);
+  background-color: var(--white-secondary);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,6 +74,10 @@
   text-transform: uppercase;
   border-radius: 2px;
   margin: auto;
+}
+
+.fall-guys__medium-card .fall-guys__medium-card__button:hover {
+  background-color: var(--white);
 }
 
 .fall-guys__medium-card .fall-guys__medium-card__image {
@@ -202,7 +206,7 @@ p {
 }
 
 .fall-guys__carrousel .fall-guys__button a {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--fall-guys-cta);
   display: flex;
   flex-direction: row;
@@ -219,6 +223,10 @@ p {
   text-transform: uppercase;
   border-radius: 2px;
   margin: 4rem auto 0;
+}
+
+.fall-guys__carrousel .fall-guys__button a:hover {
+  background-color: #ffe600;
 }
 
 /*** Media Queries ***/

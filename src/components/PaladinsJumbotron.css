@@ -84,6 +84,10 @@
   margin: 1rem 1rem 3.5rem;
 }
 
+.paladins-jumbotron__content .paladins-jumbotron__button:hover {
+  background-color: #d08a00;
+}
+
 .paladins-jumbotron__content .paladins-jumbotron__demo {
   width: 100%;
   object-fit: cover;
