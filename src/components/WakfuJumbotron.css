@@ -13,7 +13,7 @@
   background: linear-gradient(-45deg, #8f0039, #bd0146, #8f0039, #bd0146);
   background-size: 400% 400%;
   animation: WakfuGradient 10s ease-out infinite;
-  border-radius: 8px;
+  border-radius: 4px;
   margin: auto;
 }
 
@@ -85,7 +85,6 @@
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  border-radius: 2px;
   margin: 1rem 1rem 3.5rem;
 }
 
