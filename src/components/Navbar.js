@@ -130,7 +130,7 @@ class Navbar extends React.Component {
             >
               <div className="navbar__account-menu__wrapper">
                 <div className="navbar__account-menu__header">
-                  <h4>Novedades de la semana</h4>
+                  <h4>Eventos de tiempo limitado</h4>
 
                   <div onClick={() => this.setState({ isSwitchOn: !isOn })}>
                     <span></span>
