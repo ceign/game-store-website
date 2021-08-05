@@ -199,42 +199,6 @@
   height: 5px;
 }
 
-.value-card__overlay .value-card__button span {
-  background-color: var(--cta-value-card);
-  position: absolute;
-  width: calc(100% + 4px);
-  height: 1px;
-}
-
-.value-card__overlay .value-card__button span:first-child {
-  top: -6px;
-  left: -2px;
-}
-
-.value-card__overlay .value-card__button span:last-child {
-  bottom: -6px;
-  left: -2px;
-}
-
-.value-card__overlay .value-card__button span:first-child::before,
-.value-card__overlay .value-card__button span:first-child::after {
-  background-color: var(--cta-value-card);
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 36px;
-}
-
-.value-card__overlay .value-card__button span:first-child::before {
-  top: 2px;
-  left: -3px;
-}
-
-.value-card__overlay .value-card__button span:first-child::after {
-  top: 10px;
-  right: -3px;
-}
-
 .value-card .value-card__information {
   display: flex;
   align-items: flex-start;
