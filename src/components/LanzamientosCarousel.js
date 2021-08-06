@@ -17,18 +17,21 @@ const dataLanzamientos = [
     image: ImageCard_1,
     name: "Chivalry 2",
     owner: "Torn Banner Studios",
+    altAttribute: "Chivalry 2",
   },
   {
     id: 2,
     image: ImageCard_2,
     name: "Far Cry 6",
     owner: "Ubisoft",
+    altAttribute: "Far Cry 6",
   },
   {
     id: 3,
     image: ImageCard_3,
     name: "The Medium",
     owner: "Xbox Microsoft",
+    altAttribute: "The Medium",
   },
 ];
 
@@ -74,7 +77,7 @@ function LanzamientosCarousel() {
               <a href="/" onClick={(event) => event.preventDefault()}>
                 <img
                   src={item.image}
-                  alt=""
+                  alt={item.altAttribute}
                   className="reserve-card__background"
                 />
               </a>

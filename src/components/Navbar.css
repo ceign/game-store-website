@@ -544,6 +544,7 @@
     a {
     color: var(--black);
     background-color: var(--cta-value-card);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,6 +555,35 @@
     line-height: 1;
     font-weight: 600;
     text-decoration: none;
+  }
+
+  .navbar__account-menu__notification__footer
+    .navbar__account-menu__notification__cta
+    a::after,
+  .navbar__account-menu__notification__footer
+    .navbar__account-menu__notification__cta
+    a::before {
+    background-color: #0e0e0e;
+    content: "";
+    position: absolute;
+  }
+
+  .navbar__account-menu__notification__footer
+    .navbar__account-menu__notification__cta
+    a::after {
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+  }
+
+  .navbar__account-menu__notification__footer
+    .navbar__account-menu__notification__cta
+    a::before {
+    bottom: 0;
+    right: 0;
+    width: 4px;
+    height: 4px;
   }
 
   .navbar__account-menu__notification__footer

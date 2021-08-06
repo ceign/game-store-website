@@ -27,6 +27,7 @@ class Navbar extends React.Component {
         image: imageItem1,
         date: "Duración: 16 jul - 3 ago",
         company: "Digital extremes Inc.",
+        altAttribute: "Warframe",
       },
       {
         id: 2,
@@ -34,6 +35,7 @@ class Navbar extends React.Component {
         image: imageItem2,
         date: "Duración: 13 jul - 7 ago",
         company: "Riot Games Inc.",
+        altAttribute: "League of Legends",
       },
       {
         id: 3,
@@ -41,6 +43,7 @@ class Navbar extends React.Component {
         image: imageItem3,
         date: "Duración: 9 jul - 5 ago",
         company: "Electronic Arts Inc.",
+        altAttribute: "Apex",
       },
       {
         id: 4,
@@ -48,6 +51,7 @@ class Navbar extends React.Component {
         image: imageItem4,
         date: "Duración: 11 jul - 2 ago",
         company: "Quantic Dream Inc.",
+        altAttribute: "Detroit Become Human",
       },
       {
         id: 5,
@@ -56,6 +60,7 @@ class Navbar extends React.Component {
         image: imageItem5,
         date: "Duración: 5 jul - 12 ago",
         company: "Guerrilla Games Inc.",
+        altAttribute: "Forbidden West",
       },
       {
         id: 6,
@@ -63,6 +68,7 @@ class Navbar extends React.Component {
         image: imageItem6,
         date: "Duración: 9 jul - 22 jul",
         company: "EA Digital Illusions Inc.",
+        altAttribute: "Battlefield 2042",
       },
       {
         id: 7,
@@ -71,6 +77,7 @@ class Navbar extends React.Component {
         image: imageItem7,
         date: "Duración: 13 jul - 2 ago",
         company: "Riot Games Inc.",
+        altAttribute: "Valorant",
       },
     ];
 
@@ -147,7 +154,7 @@ class Navbar extends React.Component {
                         <h3>{item.title}</h3>
                       </div>
                       <div className="navbar__account-menu__notification__image">
-                        <img src={item.image} alt="Warframe" />
+                        <img src={item.image} alt={item.altAttribute} />
                       </div>
                       <div className="navbar__account-menu__notification__footer">
                         <div className="navbar__account-menu__notification__information">

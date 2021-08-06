@@ -5,6 +5,24 @@ import FallGuysCharacter_2 from "../images/fall-guys-character-2.png";
 import FallGuysCharacter_3 from "../images/fall-guys-character-3.png";
 import FallGuysCharacter_4 from "../images/fall-guys-character-4.png";
 
+const imagesCarousel = [
+  {
+    id: 1,
+    altAttribute: "Character 1",
+    srcAttribute: FallGuysCharacter_2,
+  },
+  {
+    id: 2,
+    altAttribute: "Character 2",
+    srcAttribute: FallGuysCharacter_3,
+  },
+  {
+    id: 3,
+    altAttribute: "Character 3",
+    srcAttribute: FallGuysCharacter_4,
+  },
+];
+
 const Exclusivos = () => {
   return (
     <section className="fall-guys">
@@ -37,10 +55,15 @@ const Exclusivos = () => {
 
           <div className="fall-guys__swiper">
             <div className="fall-guys__swiper-characters">
-              <img src={FallGuysCharacter_2} alt="" />
-              <img src={FallGuysCharacter_3} alt="" />
-              <img src={FallGuysCharacter_4} alt="" />
+              {imagesCarousel.map((item) => (
+                <img
+                  key={item.id}
+                  src={item.srcAttribute}
+                  alt={item.altAttribute}
+                />
+              ))}
             </div>
+
             <div className="fall-guys__swiper-bullets">
               <span></span>
               <span></span>
