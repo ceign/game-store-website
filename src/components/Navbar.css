@@ -559,35 +559,6 @@
 
   .navbar__account-menu__notification__footer
     .navbar__account-menu__notification__cta
-    a::after,
-  .navbar__account-menu__notification__footer
-    .navbar__account-menu__notification__cta
-    a::before {
-    background-color: #0e0e0e;
-    content: "";
-    position: absolute;
-  }
-
-  .navbar__account-menu__notification__footer
-    .navbar__account-menu__notification__cta
-    a::after {
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 3px;
-  }
-
-  .navbar__account-menu__notification__footer
-    .navbar__account-menu__notification__cta
-    a::before {
-    bottom: 0;
-    right: 0;
-    width: 4px;
-    height: 4px;
-  }
-
-  .navbar__account-menu__notification__footer
-    .navbar__account-menu__notification__cta
     a:hover {
     background-color: #ffe600;
   }
@@ -600,6 +571,7 @@
   .navbar__account-menu__body .navbar__account-menu__cta a {
     background-color: var(--cta-value-card);
     color: var(--black);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -612,9 +584,29 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+  .navbar__account-menu__body .navbar__account-menu__cta a::before,
+  .navbar__account-menu__body .navbar__account-menu__cta a::after {
+    background-color: #0e0e0e;
+    content: "";
+    position: absolute;
+  }
+
+  .navbar__account-menu__body .navbar__account-menu__cta a::before {
+    bottom: 0;
+    right: 0;
+    width: 0.2813rem;
+    height: 0.2813rem;
+  }
+
+  .navbar__account-menu__body .navbar__account-menu__cta a::after {
+    top: 0;
+    left: 0;
+    width: 0.1563rem;
+    height: 0.1563rem;
+  }
 
   .navbar__account-menu__body .navbar__account-menu__cta a:hover {
-    background-color: #ffe600;
+    background-color: #ffe712;
   }
 }
 

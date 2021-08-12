@@ -67,6 +67,7 @@
 .paladins-jumbotron__content .paladins-jumbotron__button {
   color: var(--white);
   background-color: var(--jumbotron-paladins-button);
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,6 +82,27 @@
   text-decoration: none;
   text-transform: uppercase;
   margin: 1rem 1rem 3.5rem;
+}
+
+.paladins-jumbotron__content .paladins-jumbotron__button::before,
+.paladins-jumbotron__content .paladins-jumbotron__button::after {
+  background-color: #926915;
+  content: "";
+  position: absolute;
+}
+
+.paladins-jumbotron__content .paladins-jumbotron__button::before {
+  bottom: 0;
+  right: 0;
+  width: 0.2813rem;
+  height: 0.2813rem;
+}
+
+.paladins-jumbotron__content .paladins-jumbotron__button::after {
+  top: 0;
+  left: 0;
+  width: 0.1563rem;
+  height: 0.1563rem;
 }
 
 .paladins-jumbotron__content .paladins-jumbotron__button:hover {

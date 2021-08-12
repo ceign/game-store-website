@@ -72,6 +72,7 @@
 .wakfu-jumbotron__content .wakfu-jumbotron__button {
   color: var(--white);
   background-color: var(--wakfu-paladins-button);
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -86,6 +87,27 @@
   text-decoration: none;
   text-transform: uppercase;
   margin: 1rem 1rem 3.5rem;
+}
+
+.wakfu-jumbotron__content .wakfu-jumbotron__button::before,
+.wakfu-jumbotron__content .wakfu-jumbotron__button::after {
+  background-color: #770730;
+  content: "";
+  position: absolute;
+}
+
+.wakfu-jumbotron__content .wakfu-jumbotron__button::before {
+  bottom: 0;
+  right: 0;
+  width: 0.2813rem;
+  height: 0.2813rem;
+}
+
+.wakfu-jumbotron__content .wakfu-jumbotron__button::after {
+  top: 0;
+  left: 0;
+  width: 0.1563rem;
+  height: 0.1563rem;
 }
 
 .wakfu-jumbotron__content .wakfu-jumbotron__button:hover {

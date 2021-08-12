@@ -140,6 +140,7 @@
 .footer-subscribe__button {
   color: var(--white);
   background-color: var(--dark-gray);
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -154,6 +155,27 @@
   text-decoration: none;
   text-transform: uppercase;
   margin: 3rem 0 1rem;
+}
+
+.footer-subscribe__button::before,
+.footer-subscribe__button::after {
+  background-color: #1d1d1d;
+  content: "";
+  position: absolute;
+}
+
+.footer-subscribe__button::before {
+  bottom: 0;
+  right: 0;
+  width: 0.2813rem;
+  height: 0.2813rem;
+}
+
+.footer-subscribe__button::after {
+  top: 0;
+  left: 0;
+  width: 0.1563rem;
+  height: 0.1563rem;
 }
 
 .footer-subscribe__button:hover {

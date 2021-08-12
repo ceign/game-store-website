@@ -178,27 +178,6 @@
   background-color: #ffe600;
 }
 
-.value-card__overlay .value-card__button::after,
-.value-card__overlay .value-card__button::before {
-  background-color: var(--black);
-  content: "";
-  position: absolute;
-}
-
-.value-card__overlay .value-card__button::after {
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 4px;
-}
-
-.value-card__overlay .value-card__button::before {
-  bottom: 0;
-  right: 0;
-  width: 6px;
-  height: 6px;
-}
-
 .value-card .value-card__information {
   display: flex;
   align-items: flex-start;
