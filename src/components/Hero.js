@@ -27,17 +27,18 @@ const Hero = () => {
             <img src={codLogo} alt="" className="hero__reserve-logo" />
 
             <h3>La temporada de la venganza ya está aquí.</h3>
-
-            <a
-              href="/"
-              className="hero__reserve-cta"
-              onClick={(event) => event.preventDefault()}
-            >
-              <p>Reservar Ahora</p>
-              <span>
-                <img src={calendarIcon} alt="" />
-              </span>
-            </a>
+            <div className="hero__reserve-cta__wrapper">
+              <a
+                href="/"
+                className="hero__reserve-cta"
+                onClick={(event) => event.preventDefault()}
+              >
+                <p>Reservar Ahora</p>
+                <span>
+                  <img src={calendarIcon} alt="" />
+                </span>
+              </a>
+            </div>
           </div>
 
           <div className="hero__reserve-footer">

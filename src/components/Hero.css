@@ -112,6 +112,13 @@
   margin: 0 auto 3.2rem;
 }
 
+.hero__reserve-cta__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  margin: auto;
+}
+
 .hero__reserve-body .hero__reserve-cta {
   background-color: var(--cta-gray);
   position: relative;
@@ -120,32 +127,45 @@
   align-items: center;
   justify-items: center;
   width: 100%;
-  max-width: 280px;
   height: 48px;
   text-decoration: none;
   text-transform: uppercase;
   margin: auto;
+  overflow: hidden;
 }
 
-.hero__reserve-body .hero__reserve-cta::before,
-.hero__reserve-body .hero__reserve-cta::after {
-  background-color: #292929;
-  content: "";
-  position: absolute;
+.hero__reserve-body .hero__reserve-cta > span {
+  z-index: 3;
 }
 
 .hero__reserve-body .hero__reserve-cta::before {
-  bottom: 0;
-  right: 0;
-  width: 0.2813rem;
-  height: 0.2813rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(
+    to right,
+    transparent 10%,
+    rgb(199, 199, 199) 50%,
+    transparent
+  );
+  transition: 0.5s all ease-in-out;
+}
+
+.hero__reserve-body .hero__reserve-cta:hover:before {
+  left: 150%;
 }
 
 .hero__reserve-body .hero__reserve-cta::after {
-  top: 0;
-  left: 0;
-  width: 0.1563rem;
-  height: 0.1563rem;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #090707fd;
 }
 
 .hero__reserve-body .hero__reserve-cta:hover {
@@ -157,6 +177,7 @@
   font-family: "Exo 2", sans-serif;
   font-size: 0.75rem;
   font-weight: 600;
+  z-index: 3;
 }
 
 .hero__reserve-footer {

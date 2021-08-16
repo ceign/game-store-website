@@ -583,30 +583,40 @@
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
+    overflow: hidden;
   }
-  .navbar__account-menu__body .navbar__account-menu__cta a::before,
-  .navbar__account-menu__body .navbar__account-menu__cta a::after {
-    background-color: #0e0e0e;
+  .navbar__account-menu__body .navbar__account-menu__cta a::before {
     content: "";
     position: absolute;
-  }
-
-  .navbar__account-menu__body .navbar__account-menu__cta a::before {
-    bottom: 0;
-    right: 0;
-    width: 0.2813rem;
-    height: 0.2813rem;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(
+      to right,
+      transparent 10%,
+      rgba(231, 255, 136, 0.672) 50%,
+      transparent
+    );
+    top: 0;
+    left: -100%;
+    transition: 0.5s all ease-in-out;
   }
 
   .navbar__account-menu__body .navbar__account-menu__cta a::after {
-    top: 0;
-    left: 0;
-    width: 0.1563rem;
-    height: 0.1563rem;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #181816;
   }
 
   .navbar__account-menu__body .navbar__account-menu__cta a:hover {
     background-color: #ffe712;
+  }
+
+  .navbar__account-menu__body .navbar__account-menu__cta a:hover::before {
+    left: 150%;
   }
 }
 
