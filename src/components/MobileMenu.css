@@ -1,0 +1,43 @@
+.navbar__mobile {
+  background-color: var(--light-black);
+  position: absolute;
+  top: 90px;
+  right: -80%;
+  width: 80%;
+  height: calc(100vh - 90px);
+}
+
+.navbar__mobile .navbar__button-mobile {
+  background-color: var(--black-secondary);
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar__button-mobile span {
+  background-color: var(--white);
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+}
+
+.navbar__button-mobile span:first-child {
+  top: 33%;
+  left: calc(50% - 15px);
+}
+
+.navbar__button-mobile span:nth-child(2) {
+  top: 48%;
+  left: calc(50% - 10px);
+  width: 25px;
+}
+
+.navbar__button-mobile span:last-child {
+  top: 63%;
+  left: calc(50% - 15px);
+}

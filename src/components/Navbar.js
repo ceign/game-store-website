@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import "./MobileMenu.css";
 import logo from "../images/logo.svg";
 import avatar from "../images/avatar.png";
 import serverIcon from "../images/server-icon.svg";
@@ -187,6 +188,14 @@ class Navbar extends React.Component {
             <img src={avatar} alt="Avatar - Conectado" />
 
             <span>Tom Hanks</span>
+          </div>
+
+          <div className="navbar__mobile">
+            <div className="navbar__button-mobile">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </nav>
