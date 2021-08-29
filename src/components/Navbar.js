@@ -191,7 +191,59 @@ class Navbar extends React.Component {
           </div>
 
           <div className="navbar__mobile">
-            <div className="navbar__button-mobile">
+            <div className="navbar__mobile-wrapper">
+              <ul className="navbar__mobile-items">
+                <li>
+                  <a href="/" onClick={(event) => event.preventDefault()}>
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="/" onClick={(event) => event.preventDefault()}>
+                    Explorar
+                  </a>
+                </li>
+                <li>
+                  <a href="/" onClick={(event) => event.preventDefault()}>
+                    Juegos AAA
+                  </a>
+                </li>
+                <li>
+                  <a href="/" onClick={(event) => event.preventDefault()}>
+                    Aclamados
+                  </a>
+                </li>
+              </ul>
+              <div className="navbar__mobile-account">
+                <ul className="navbar__mobile-buttons">
+                  <li>
+                    <img
+                      src={serverIcon}
+                      alt="Servidor"
+                      className="navbar__icon"
+                    />
+                    <span>Servidores</span>
+                  </li>
+
+                  <li>
+                    <img
+                      src={gamesIcon}
+                      alt="Juegos"
+                      className="navbar__icon"
+                    />
+                    <span>Eventos</span>
+                  </li>
+                </ul>
+
+                <div className="navbar__mobile-avatar">
+                  <img src={avatar} alt="Avatar - Conectado" />
+
+                  <span>Tom Hanks</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="navbar__button-mobile navbar__button-mobile--active">
               <span></span>
               <span></span>
               <span></span>

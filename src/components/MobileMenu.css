@@ -16,6 +16,127 @@
   height: 70px;
   border-radius: 50%;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.navbar__mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__mobile-items {
+  width: 100%;
+  height: auto;
+}
+
+.navbar__mobile-items li {
+  height: 60px;
+  border-bottom: 0.5px solid rgba(201, 201, 201, 0.2);
+}
+
+.navbar__mobile-items a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  padding: 0 0 0 2rem;
+}
+
+.navbar__mobile-account {
+  width: 100%;
+  height: 50%;
+}
+
+.navbar__mobile-account .navbar__mobile-buttons {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 0.5px solid rgba(201, 201, 201, 0.2);
+  border-bottom: 0.5px solid rgba(201, 201, 201, 0.2);
+}
+
+.navbar__mobile-account .navbar__mobile-buttons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.5px;
+  height: 100%;
+  background-color: rgba(201, 201, 201, 0.2);
+}
+
+.navbar__mobile-account .navbar__mobile-buttons li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-basis: 50%;
+  height: 60px;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.navbar__mobile-account .navbar__mobile-buttons li img {
+  margin-right: 10px;
+}
+
+.navbar__mobile-account .navbar__mobile-buttons li span {
+  color: var(--white);
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  user-select: none;
+}
+
+.navbar__mobile-account .navbar__mobile-avatar {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.navbar__mobile-account .navbar__mobile-avatar img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.navbar__mobile-account .navbar__mobile-avatar::before {
+  background-color: var(--active);
+  border: 3px solid var(--black);
+  content: "";
+  position: absolute;
+  left: 48px;
+  bottom: -3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.navbar__mobile-account .navbar__mobile-avatar span {
+  color: var(--white);
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
+  margin-left: 1rem;
 }
 
 .navbar__button-mobile span {
@@ -24,6 +145,7 @@
   width: 30px;
   height: 4px;
   border-radius: 15px;
+  transition: 0.3s all ease-in-out;
 }
 
 .navbar__button-mobile span:first-child {
@@ -40,4 +162,25 @@
 .navbar__button-mobile span:last-child {
   top: 63%;
   left: calc(50% - 15px);
+}
+
+.navbar__button-mobile--active {
+  background-color: #575757 !important;
+}
+
+.navbar__button-mobile--active span:first-child {
+  top: 48%;
+  transform: rotate(45deg);
+}
+
+.navbar__button-mobile--active span:nth-child(2) {
+  top: 48%;
+  left: 0;
+  width: 25px;
+  opacity: 0;
+}
+
+.navbar__button-mobile--active span:last-child {
+  top: 48%;
+  transform: rotate(-45deg);
 }
