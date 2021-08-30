@@ -190,7 +190,11 @@ class Navbar extends React.Component {
             <span>Tom Hanks</span>
           </div>
 
-          <div className="navbar__mobile">
+          <div
+            className={`navbar__mobile  ${
+              isOn ? "navbar__mobile--active" : "navbar__mobile--inactive "
+            } `}
+          >
             <div className="navbar__mobile-wrapper">
               <ul className="navbar__mobile-items">
                 <li>
@@ -243,7 +247,14 @@ class Navbar extends React.Component {
               </div>
             </div>
 
-            <div className="navbar__button-mobile navbar__button-mobile--active">
+            <div
+              className={`navbar__button-mobile ${
+                isOn
+                  ? "navbar__button-mobile--active"
+                  : ".navbar__mobile--inactive "
+              } `}
+              onClick={() => this.setState({ isSwitchOn: !isOn })}
+            >
               <span></span>
               <span></span>
               <span></span>

@@ -1,10 +1,23 @@
+body.overflow--active {
+  overflow: hidden;
+}
+
 .navbar__mobile {
   background-color: var(--light-black);
   position: absolute;
   top: 90px;
-  right: -80%;
   width: 80%;
   height: calc(100vh - 90px);
+  transition: 0.2s right ease;
+  z-index: 5;
+}
+
+.navbar__mobile--active {
+  right: 0;
+}
+
+.navbar__mobile--inactive {
+  right: -80%;
 }
 
 .navbar__mobile .navbar__button-mobile {
@@ -36,6 +49,10 @@
 .navbar__mobile-items li {
   height: 60px;
   border-bottom: 0.5px solid rgba(201, 201, 201, 0.2);
+}
+
+.navbar__mobile-items li:hover {
+  background-color: #ccc;
 }
 
 .navbar__mobile-items a {
@@ -119,7 +136,7 @@
 
 .navbar__mobile-account .navbar__mobile-avatar::before {
   background-color: var(--active);
-  border: 3px solid var(--black);
+  border: 3px solid var(--black-secondary);
   content: "";
   position: absolute;
   left: 48px;
@@ -137,6 +154,7 @@
   line-height: 1.25;
   letter-spacing: 0.2px;
   margin-left: 1rem;
+  user-select: none;
 }
 
 .navbar__button-mobile span {
@@ -183,4 +201,19 @@
 .navbar__button-mobile--active span:last-child {
   top: 48%;
   transform: rotate(-45deg);
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  .navbar__mobile {
+    width: 35%;
+    transition: 0.6s right ease;
+  }
+}
+
+/* 1024px */
+@media (min-width: 64em) {
+  .navbar__mobile {
+    display: none;
+  }
 }

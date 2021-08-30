@@ -251,8 +251,8 @@
   .navbar__wrapper .navbar__avatar {
     grid-column: 4 / -1;
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
 
   .navbar__avatar::before {
@@ -263,6 +263,13 @@
 
   .navbar__avatar span {
     font-size: 0.8125rem;
+  }
+
+  .navbar__avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
 
