@@ -52,7 +52,7 @@ body.overflow--active {
 }
 
 .navbar__mobile-items li:hover {
-  background-color: #ccc;
+  background-color: #464646;
 }
 
 .navbar__mobile-items a {
@@ -103,6 +103,10 @@ body.overflow--active {
   height: 60px;
   padding-left: 1rem;
   cursor: pointer;
+}
+
+.navbar__mobile-account .navbar__mobile-buttons li:hover {
+  background-color: #464646;
 }
 
 .navbar__mobile-account .navbar__mobile-buttons li img {
