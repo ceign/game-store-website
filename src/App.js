@@ -13,6 +13,7 @@ import LanzamientosCarousel from "./components/LanzamientosCarousel";
 import ClasicoDelMes from "./components/ClasicoDelMes";
 import WakfuJumbotron from "./components/WakfuJumbotron";
 import Footer from "./components/Footer";
+import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <ClasicoDelMes />
       <WakfuJumbotron />
       <Footer />
+      <Modal />
     </>
   );
 }

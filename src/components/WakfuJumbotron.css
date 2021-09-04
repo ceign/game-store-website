@@ -32,6 +32,7 @@
   height: 350px;
   object-fit: cover;
   filter: drop-shadow(4px 10px 3px #2e0313);
+  animation: bounce 2.2s cubic-bezier(0.48, 0.03, 0.55, 0.98) infinite alternate;
 }
 
 .wakfu-jumbotron__content {
@@ -43,6 +44,7 @@
 
 .wakfu-jumbotron__characters img:last-child {
   display: none;
+  animation: bounce 6s cubic-bezier(0.48, 0.03, 0.55, 0.98) infinite alternate;
 }
 
 .wakfu-jumbotron__content .wakfu-jumbotron__logo {

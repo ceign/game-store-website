@@ -30,6 +30,7 @@
   width: 280px;
   height: 380px;
   object-fit: cover;
+  animation: bounce 7s cubic-bezier(0.48, 0.03, 0.55, 0.98) infinite alternate;
 }
 
 .paladins-jumbotron__content {
@@ -37,6 +38,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+
+.paladins-jumbotron__characters img:last-child {
+  animation: bounce 5s cubic-bezier(0.48, 0.03, 0.55, 0.98) infinite alternate;
 }
 
 .paladins-jumbotron__characters img:nth-child(2),
